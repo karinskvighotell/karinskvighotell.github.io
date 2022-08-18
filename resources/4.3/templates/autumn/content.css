@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, Sans-serif;
+  font-size: 11px;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+table td {
+  font-family: Verdana, Sans-serif;
+  font-size: 11px;
+}
+
+h1 { 
+	font-family: "Comic Sans MS", verdana, helvetica, arial, sans-serif;
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+h2 { 
+	font-family: "Comic Sans MS", verdana, helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+h3 { 
+	font-family: "Comic Sans MS", verdana, helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+ul { padding: 0 0 0 25px; margin: 0 0 10px 0; }
+li {  }

@@ -1,0 +1,10 @@
+div.FreeAccount {
+	position: fixed;
+	_position: absolute;
+	z-index: 500;
+	top: 60px;
+	right: -2px;
+	_right: 0;
+	width: 45px;
+	height: 230px;
+}

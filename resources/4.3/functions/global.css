@@ -1,0 +1,269 @@
+@import url("contact.css");
+@import url("diary.css");
+@import url("galleries.css");
+@import url("guestbook.css");
+@import url("../../scripts/jquery-ui-1.9.2/css/ui-lightness/jquery-ui-1.9.2.custom.css");
+@import url("freeaccount.css");
+@import url("../fontawesome/pro/css/all.min.css");
+
+
+/* ============================================== */
+/* Hide mobile menu button in non-responsive mode */
+/* ============================================== */
+
+.DiaryList .show-blog-menu,
+.MobileMenuContainer .show-menu { 
+    display: none; 
+}
+
+.DiaryList .show-blog-menu-check,
+.MobileMenuContainer .show-menu-check {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* ============================================== */
+
+.ClearBoth { clear: both; }
+
+/*
+Fix for HTML5 3px margin under every image 
+========================================================================
+*/
+img {
+    vertical-align: middle !important;
+}
+
+img.CaptchaImage {
+    display: inline-block;
+}
+
+/*
+Like buttons
+========================================================================
+*/
+
+.ShareButtons {
+	padding: 5px 0;
+	height: 21px;
+}
+.ShareButtons img {
+	cursor: pointer;
+}
+.ShareButtons .FacebookShare,
+.ShareButtons .FacebookShareCounter,
+.ShareButtons .GoogleShare,
+.ShareButtons .TwitterShare,
+.ShareButtons .LinkedInShare {
+	float: left;
+	margin-right: 10px;
+}
+.ShareButtons .FacebookShare {
+	margin-right: 5px;
+}
+
+/*
+Google Maps Pluginet
+========================================================================
+*/
+
+.gm-style-iw div { color: black !important; }
+
+/*
+Captcha
+========================================================================
+*/
+
+.CaptchaReload {
+	border: 1px solid #555;
+	color: white;
+	width: 110px;
+	height: 20px;
+	padding-left: 22px;
+	font-size: 11px;
+	margin: 3px 0;
+	font-family: Arial, Helvetica, Sans-Serif;
+	background: #999 url('images/captcha-reload.png') no-repeat 2px center;
+	cursor: pointer;
+}
+.CaptchaReload:hover {
+	border: 1px solid #555;
+	background-color: #ccc;
+}
+.CaptchaImageTD {
+    font-size: 0;
+	line-height: normal;
+	text-align: right;
+}
+.CaptchaError {
+	background: #ffc8c8 url('images/error.png') no-repeat bottom right;
+	border: 1px dashed red;
+	padding: 10px;
+	padding-right: 25px;
+	margin: 5px 0;
+}
+.CaptchaError p {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 9pt;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.CaptchaRequired {
+	background: #f4cece url('images/unfilled-field.gif') no-repeat center right !important;
+	border-color: #db4141 !important;
+	border-width: 1px;
+	color: black !important;
+}
+
+.CaptchaImage {
+	border: 0 !important;
+	display: inline-block;
+	line-height: normal;
+}
+
+.Diary .useSmileys { float: left; }
+.Diary .reCaptcha { 
+	float: right;
+	width: auto !important; 
+	margin-right: -8px;
+}
+
+/* 
+   2016-09-22: Introduced 600x800px image sizes, have to reset the sizes globally  
+   so the old templates doesn't break.
+*/
+
+.MainPageInlineContainer .ImageContainer img { max-width: 200px; }
+.MainPage .ImageContainer img                { max-width: 200px; }
+.TextLayout1 .ImageContainer img             { max-width: 200px; }
+.TextLayout2 .ImageContainer img             { max-width: 180px; }
+.Contact .ImageContainer img                 { max-width: 300px; }
+
+/*
+	Hide ds-pager settings spans
+*/
+.GalleryPagerLinksContainer #pager-settings { display: none; }
+
+
+/*
+	Hide entries to prevent blink effekt for the pagers
+*/
+
+.Guestbook .GuestBookEntryListContainer .GuestBookEntry,
+.ResponsiveDesign .NewsContainer .NewsItem { display: none; }
+
+/*
+New Layout system
+========================================================================
+*/
+
+
+.LayoutPage .section-separator { display: none; }
+
+.LayoutPage .col-block {
+	float: left;
+	box-sizing: border-box;
+	min-height: 1px;
+}
+
+.LayoutPage .block-container {
+	margin-bottom: 1em;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.LayoutPage .block-object {
+	box-sizing: border-box;
+}
+	
+.LayoutPage .block-object img {
+	display: inline-block;
+	max-width: 100% !important;
+	height: auto;
+}
+
+.LayoutPage .block-object .gmap {
+	width: 100%;
+	max-width: none;
+	height: 400px;
+	display: block;
+}
+.LayoutPage .block-object .gmap img {
+    max-width: none !important;
+    max-height: none;
+}
+
+/* -- Layout styles -- */
+
+.LayoutPage .layout-1 .col-0 { width: auto; }
+.LayoutPage .layout-1 .col-block { float: none; }
+
+.LayoutPage .layout-2 .col-0 { width: 50%; padding-right: 1%; }
+.LayoutPage .layout-2 .col-1 { width: 50%; padding-left:  1%; }
+
+.LayoutPage .layout-3 .col-0 { width: 33.333%; padding-right: 1.333%; }
+.LayoutPage .layout-3 .col-1 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+.LayoutPage .layout-3 .col-2 { width: 33.333%; padding-left:  1.333%; }
+
+.LayoutPage .layout-4 .col-0 { width: 25%; padding-right: 1.5%; }
+.LayoutPage .layout-4 .col-1 { width: 25%; padding-left:  0.5%; padding-right: 1.0%; }
+.LayoutPage .layout-4 .col-2 { width: 25%; padding-left:  1.0%; padding-right: 0.5%; }
+.LayoutPage .layout-4 .col-3 { width: 25%; padding-left:  1.5%; }
+
+.LayoutPage .layout-5 .col-0 { width: 33%; padding-right: 1%; }
+.LayoutPage .layout-5 .col-1 { width: 67%; padding-left:  1%; }
+
+.LayoutPage .layout-6 .col-0 { width: 67%; padding-right: 1%; }
+.LayoutPage .layout-6 .col-1 { width: 33%; padding-left:  1%; }
+
+.LayoutPage .layout-7 .col-0 { width: 25%; padding-right: 1.333%; }
+.LayoutPage .layout-7 .col-1 { width: 50%; padding-left:  0.667%; padding-right: 0.667%; }
+.LayoutPage .layout-7 .col-2 { width: 25%; padding-left:  1.333%; }
+
+.LayoutPage .layout-8 .col-0 { width: 25%; padding-right: 1.333%; }
+.LayoutPage .layout-8 .col-1 { width: 25%; padding-left:  0.667%; padding-right: 0.667%; }
+.LayoutPage .layout-8 .col-2 { width: 50%; padding-left:  1.333%; }
+
+.LayoutPage .layout-9 .col-0 { width: 50%; padding-right: 1.333%; }
+.LayoutPage .layout-9 .col-1 { width: 25%; padding-left:  0.667%; padding-right: 0.667%; }
+.LayoutPage .layout-9 .col-2 { width: 25%; padding-left:  1.333%; }
+
+.LayoutPage .layout-10 .col-0 { width: 20%; padding-right: 1.5%; }
+.LayoutPage .layout-10 .col-1 { width: 20%; padding-left:  0.5%; padding-right: 1.0%; }
+.LayoutPage .layout-10 .col-2 { width: 20%; padding-left:  1.0%; padding-right: 1.0%; }
+.LayoutPage .layout-10 .col-3 { width: 20%; padding-left:  1.0%; padding-right: 0.5%; }
+.LayoutPage .layout-10 .col-4 { width: 20%; padding-left:  1.5%; }
+
+.LayoutPage .layout-11 .col-0 { width: 16.666%; padding-right: 1.5%; }
+.LayoutPage .layout-11 .col-1 { width: 16.667%; padding-left:  0.5%; padding-right: 1.0%; }
+.LayoutPage .layout-11 .col-2 { width: 16.667%; padding-left:  1.0%; padding-right: 1.0%; }
+.LayoutPage .layout-11 .col-3 { width: 16.667%; padding-left:  1.0%; padding-right: 1.0%; }
+.LayoutPage .layout-11 .col-4 { width: 16.667%; padding-left:  1.0%; padding-right: 0.5%; }
+.LayoutPage .layout-11 .col-5 { width: 16.666%; padding-left:  1.5%; }
+
+.LayoutPage .layout-12 .col-0 { clear: both; width: auto; float: none; }
+.LayoutPage .layout-12 .col-1 { width: 50%; padding-right: 1%; }
+.LayoutPage .layout-12 .col-2 { width: 50%; padding-left:  1%; }
+.LayoutPage .layout-12 .col-3 { clear: both; width: auto; float: none; }
+
+.LayoutPage .layout-13 .col-0 { clear: both; width: auto; float: none; }
+.LayoutPage .layout-13 .col-1 { width: 33.333%; padding-right: 1.333%; }
+.LayoutPage .layout-13 .col-2 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+.LayoutPage .layout-13 .col-3 { width: 33.333%; padding-left:  1.333%; }
+.LayoutPage .layout-13 .col-4 { clear: both; width: auto; float: none; }
+
+.LayoutPage .layout-14 .col-0 { clear: both; width: auto; float: none; }
+.LayoutPage .layout-14 .col-1 { width: 25%; padding-right: 1.5%; }
+.LayoutPage .layout-14 .col-2 { width: 25%; padding-left:  0.5%; padding-right: 1.0%; }
+.LayoutPage .layout-14 .col-3 { width: 25%; padding-left:  1.0%; padding-right: 0.5%; }
+.LayoutPage .layout-14 .col-4 { width: 25%; padding-left:  1.5%; }
+.LayoutPage .layout-14 .col-5 { clear: both; width: auto; float: none; }
+
+.LayoutPage .col-0,
+.LayoutPage .col-1,
+.LayoutPage .col-2,
+.LayoutPage .col-3,
+.LayoutPage .col-4,
+.LayoutPage .col-5 { max-width: 100%; }

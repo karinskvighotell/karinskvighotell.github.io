@@ -1,0 +1,1049 @@
+
+
+.GalleryCommentSentMessage {
+	background: #e4fae7 url('images/sent-check.gif') no-repeat 10px 10px;
+	border: 1px dashed #2f7f0a;
+	padding: 10px 10px 10px 70px;
+	width: 300px;
+	min-height: 50px;
+	margin: 10px 3px;
+}
+.GalleryCommentSentMessage p {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 10pt;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+.GalleryCommentFormControl {
+	border-collapse: collapse;
+	width: 520px;
+}
+.GalleryCommentFormControl textarea {
+	width: 520px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.GalleryCommentFormControl .GalleryCommentSmiliesTD {
+}
+.GalleryCommentFormControl .GalleryCommentSubmitTD {
+	text-align: right;
+	width: 150px;
+}
+
+div.CommentContainer {
+	width: 520px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+div.CommentContainer p {
+	margin: 0;
+	padding: 0;
+}
+div.CommentContainer p.TimeStamp {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 9pt;
+}
+.GalleryCommentFormControl span.CommentLabel {
+}
+
+.Gallery09 .GalleryCommentFormControl,
+.Gallery09 .GalleryCommentFormControl textarea,
+.Gallery09 div.CommentContainer,
+.Gallery10 .GalleryCommentFormControl,
+.Gallery10 .GalleryCommentFormControl textarea,
+.Gallery10 div.CommentContainer {
+	width: 380px;
+}
+
+/*
+div.GalleryComments .EditButtons {
+	clear: both;
+}
+div.CommentContainer {
+	clear: both;
+	border-bottom: 1px solid #7d7d7d;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	min-height: 30px;
+	_height: 30px;
+}
+div.CommentContainer p.TimeStamp {
+	width: 90px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+div.CommentContainer p.Text {
+	padding: 0;
+	margin: 0;
+}
+*/
+
+/*
+Fix for TinyMCE in the old galleries
+===============================================================
+*/
+
+.ImageGallery2 .FunctionTable table { width: 100%; }
+.ImageGallery3 .FunctionTable table { width: 100%; }
+
+
+/*
+Gallery 1
+===============================================================
+*/
+
+.Gallery1 {
+	width: 600px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery1 .GalleryTable {
+	border-collapse: collapse;
+	width: 600px;
+	_background: transparent !important;
+}
+.Gallery1 .GalleryTable td, .Gallery1 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery1 .GalleryTable .GalleryCell {
+	position: relative;
+	vertical-align: top;
+	width: 140px;
+	text-align: center;
+}
+.Gallery1 .GalleryTable .ParagraphContainer {
+	margin-top: 10px;
+}
+.Gallery1 .GalleryTable .GalleryCell div.ParagraphContainer {
+	text-align: left;
+}
+.Gallery1 .GalleryTable .GalleryColumnPadding {
+	width: 5px;
+}
+.Gallery1 .GalleryTable tr.GalleryRowPadding td {
+	height: 10px;
+}
+.Gallery1 div.ImageContainerMiddle img {
+	max-width: 120px;
+	max-height: 120px;
+	_width: expression(this.width > 120 ? 120: true);
+	_height: expression(this.height > 120 ? 120: true);
+	display: inline;
+}
+.Gallery1 div.ImageContainerMiddle {
+	/* IE 8 bug-workaround for max-width on animated gif */
+	width /*\**/: 120px\9;
+	overflow /*\**/: hidden\9;
+	margin /*\**/: 0 auto\9;
+	*width: auto;
+	*overflow: visible;
+	*margin: 0;
+}
+/*
+Gallery 2
+===============================================================
+*/
+
+.Gallery2 {
+	width: 530px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery2 .GalleryTable {
+	width: 530px;
+	border-collapse: collapse;
+	_background: transparent !important;
+}
+.Gallery2 .GalleryTable td, .Gallery2 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery2 .GalleryTable .GalleryImageCell {
+	position: relative;
+	vertical-align: top;
+	width: 120px;
+}
+.Gallery2 .GalleryTable .GalleryTextCell {
+	position: relative;
+	vertical-align: top;
+}
+.Gallery2 .GalleryTable .GalleryColumnPadding {
+	width: 10px;
+}
+.Gallery2 .GalleryTable tr.GalleryRowPadding td {
+	height: 10px;
+}
+.Gallery2 div.ImageContainerMiddle img {
+	max-width: 120px;
+	max-height: 120px;
+	_width: expression(this.width > 120 ? 120: true);
+	_height: expression(this.height > 120 ? 120: true);
+}
+.Gallery2 div.ImageContainerMiddle {
+	/* IE 8 bug-workaround for max-width on animated gif */
+	width /*\**/: 120px\9;
+	overflow /*\**/: hidden\9;
+	margin /*\**/: 0 auto\9;
+	*width: auto;
+	*overflow: visible;
+	*margin: 0;
+}
+
+/*
+Gallery 3
+===============================================================
+*/
+
+
+.Gallery3 {
+	width: 530px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery3 .GalleryTable {
+	width: 530px;
+	border-collapse: collapse;
+	_background: transparent !important;
+}
+.Gallery3 .GalleryTable td, .Gallery3 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery3 .GalleryTable .GalleryImageCell {
+	position: relative;
+	vertical-align: top;
+	width: 50px;
+}
+.Gallery3 .GalleryTable .GalleryTextCell {
+	position: relative;
+	vertical-align: top;
+}
+.Gallery3 .GalleryTable .GalleryColumnPadding {
+	width: 10px;
+}
+.Gallery3 .GalleryTable tr.GalleryRowPadding td {
+	height: 10px;
+}
+.Gallery3 div.ImageContainerMiddle img {
+	max-width: 50px;
+	max-height: 50px;
+	_width: expression(this.width > 50 ? 50: true);
+	_height: expression(this.height > 50 ? 50: true);
+}
+.Gallery3 div.ImageContainerMiddle {
+	/* IE 8 bug-workaround for max-width on animated gif */
+	width /*\**/: 120px\9;
+	overflow /*\**/: hidden\9;
+	margin /*\**/: 0 auto\9;
+	*width: auto;
+	*overflow: visible;
+	*margin: 0;
+}
+
+/*
+Gallery 4
+===============================================================
+*/
+
+.Gallery4 {
+	width: 700px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery4 .GalleryTable {
+	border-collapse: collapse;
+	width: 700px;
+	_background: transparent !important;
+}
+.Gallery4 .GalleryTable td, .Gallery4 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery4 .GalleryTable .GalleryImageCell {
+	position: relative;
+	vertical-align: top;
+	width: 120px;
+}
+.Gallery4 .GalleryTable .GalleryTextCell {
+	position: relative;
+	vertical-align: top;
+	width: 200px;
+}
+.Gallery4 .GalleryTable .GalleryColumnPadding {
+	width: 10px;
+}
+.Gallery4 .GalleryTable tr.GalleryRowPadding td {
+	height: 10px;
+}
+.Gallery4 div.ImageContainerMiddle img {
+	max-width: 120px;
+	max-height: 120px;
+	_width: expression(this.width > 120 ? 120: true);
+	_height: expression(this.height > 120 ? 120: true);
+}
+.Gallery4 div.ImageContainerMiddle {
+	/* IE 8 bug-workaround for max-width on animated gif */
+	width /*\**/: 120px\9;
+	overflow /*\**/: hidden\9;
+	margin /*\**/: 0 auto\9;
+	*width: auto;
+	*overflow: visible;
+	*margin: 0;
+}
+
+/*
+Gallery 5
+===============================================================
+*/
+
+.Gallery5 {
+	width: 700px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery5 .GalleryTable {
+	border-collapse: collapse;
+	width: 700px;
+	_background: transparent !important;
+}
+.Gallery5 .GalleryTable td, .Gallery5 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery5 .GalleryTable .GalleryImageCell {
+	position: relative;
+	vertical-align: top;
+	width: 50px;
+}
+.Gallery5 .GalleryTable .GalleryTextCell {
+	position: relative;
+	vertical-align: top;
+	width: 270px;
+}
+.Gallery5 .GalleryTable .GalleryColumnPadding {
+	width: 10px;
+}
+.Gallery5 .GalleryTable tr.GalleryRowPadding td {
+	height: 10px;
+}
+.Gallery5 div.ImageContainerMiddle img {
+	max-width: 50px;
+	max-height: 50px;
+	_width: expression(this.width > 50 ? 50: true);
+	_height: expression(this.height > 50 ? 50: true);
+}
+.Gallery5 div.ImageContainerMiddle {
+	/* IE 8 bug-workaround for max-width on animated gif */
+	width /*\**/: 120px\9;
+	overflow /*\**/: hidden\9;
+	margin /*\**/: 0 auto\9;
+	*width: auto;
+	*overflow: visible;
+	*margin: 0;
+}
+
+/*
+Gallery 6
+===============================================================
+*/
+
+.Gallery6 {
+ 	margin: 0 auto;
+	padding: 10px 0;
+	width: 565px;
+}
+.Gallery6 .GalleryTable {
+	border-collapse: collapse;
+	width: 565px;
+	_background: transparent !important;
+}
+.Gallery6 .GalleryTable td, .Gallery6 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery6 .GalleryTable .GalleryCell {
+	position: relative;
+	vertical-align: middle;
+	width: 90px;
+	text-align: center;
+}
+.Gallery6 .GalleryTable .GalleryCell div.ImageContainerMiddle {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+}
+
+.Gallery6 .GalleryTable div.ParagraphContainer * {
+	display: none;
+}
+.Gallery6 .GalleryTable .GalleryColumnPadding {
+	width: 5px;
+}
+.Gallery6 .GalleryTable tr.GalleryRowPadding td {
+	height: 5px;
+}
+.Gallery6 div.ImageContainerMiddle img {
+	max-width: 120px;
+	max-height: 120px;
+	_width: expression(this.width > 120 ? 120: true);
+	_height: expression(this.height > 120 ? 120: true);
+}
+
+/*
+Gallery 7
+===============================================================
+*/
+
+.Gallery7 {
+	width: 600px;
+ 	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery7 .GalleryTable {
+	width: 600px;
+	border-collapse: collapse;
+	margin: 0 auto;
+	_background: transparent !important;
+}
+.Gallery7 .GalleryTable td, .Gallery7 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery7 .GalleryTable .GalleryCell {
+	position: relative;
+	vertical-align: middle;
+	width: 35px;
+	text-align: center;
+}
+.Gallery7 .GalleryTable .GalleryCell div.ImageContainerMiddle {
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+}
+.Gallery7 .GalleryTable div.ParagraphContainer * {
+	display: none;
+}
+.Gallery7 .GalleryTable .GalleryColumnPadding {
+	width: 5px;
+}
+.Gallery7 .GalleryTable tr.GalleryRowPadding td {
+	height: 5px;
+}
+.Gallery7 div.ImageContainerMiddle img {
+	max-width: 50px;
+	max-height: 50px;
+	_width: expression(this.width > 50 ? 50: true);
+	_height: expression(this.height > 50 ? 50: true);
+}
+
+/*
+Gallery 8
+===============================================================
+*/
+
+.Gallery8 {
+	padding: 10px 0;
+}
+.Gallery8 .GalleryContainer {
+	border-collapse: collapse;
+	width: 700px;
+	margin: 0 auto;
+}
+.Gallery8 .GalleryTable {
+	border-collapse: collapse;
+	width: 500px;
+	margin: 0 auto;
+	_background: transparent !important;
+}
+.Gallery8 .GalleryTable td, .Gallery8 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery8 .GalleryTable .GalleryCell {
+	position: relative;
+	vertical-align: middle;
+	width: 40px;
+	text-align: center;
+}
+.Gallery8 .GalleryTable .GalleryCell div.ImageContainerMiddle {
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+}
+.Gallery8 .GalleryTable div.ParagraphContainer * {
+	display: none;
+}
+.Gallery8 .GalleryTable .GalleryColumnPadding {
+	width: 5px;
+}
+.Gallery8 .GalleryTable tr.GalleryRowPadding td {
+	height: 5px;
+}
+
+.Gallery8 .Fullview {
+	width: 700px;
+	margin: 0 auto;
+}
+.Gallery8 .Fullview .FullviewImage {
+	width: 700px;
+	height: 525px;
+}
+.Gallery8 .Fullview .FullviewImage img {
+	/* max-width for IE6 */
+	_width: expression(Math.min(this.clientWidth, 700) + "px");
+	border: 0;
+}
+
+.Gallery8 div.ImageContainerMiddle img {
+	max-width: 50px;
+	max-height: 50px;
+	_width: expression(this.width > 50 ? 50: true);
+	_height: expression(this.height > 50 ? 50: true);
+}
+
+/*
+Gallery 9
+===============================================================
+*/
+.Gallery9 {
+	width: 750px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery9 .GalleryContainer {
+	border-collapse: collapse;
+	_background: transparent !important;
+}
+.Gallery9 .GalleryTable {
+	border-collapse: collapse;
+	_background: transparent !important;
+}
+.Gallery9 .GalleryTable .GalleryColumnPadding {
+	width: 3px;
+}
+.Gallery9 .GalleryTable tr.GalleryRowPadding td {
+	height: 3px;
+}
+.Gallery9 .GalleryContainer .ThumbContainer {
+	border-collapse: collapse;
+	vertical-align: top;
+	width: 130px;
+}
+.Gallery9 .GalleryContainer .GalleryImageCell {
+	position: relative;
+}
+.Gallery9 .GalleryContainer .ThumbContainer .ParagraphContainer,
+.Gallery9 .GalleryContainer .ThumbContainer .GalleryImageDescription {
+	display: none;
+}
+.Gallery9 .GalleryContainer .ThumbContainer div.ImageContainerMiddle {
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+}
+.Gallery9 .GalleryContainer .ThumbContainer div.ImageContainerMiddle img {
+	height: 45px;
+}
+.Gallery9 .GalleryContainer .ThumbContainer .GalleryPagerLinks {
+	width: 130px;
+}
+.Gallery9 .GalleryContainer .ContainerPadding {
+	border-collapse: collapse;
+	vertical-align: top;
+	width: 5px;
+}
+
+.Gallery9 .GalleryContainer .FullviewContainer {
+	border-collapse: collapse;
+	vertical-align: top;
+}
+
+.Gallery9 .Fullview {
+	width: 600px;
+	margin: 0 auto;
+}
+.Gallery9 .Fullview .FullviewImage {
+	width: 600px;
+	height: 450px;
+}
+.Gallery9 .Fullview .FullviewImage img {
+	/* max-width for IE6 */
+	_width: expression(Math.min(this.clientWidth, 600) + "px");
+	border: 0;
+}
+
+div.Gallery9 .GalleryPagerLinks .PreviousPage {
+	width: 20px;
+	height: 15px;
+}
+div.Gallery9 .GalleryPagerLinks .NextPage {
+	width: 20px;
+	height: 15px;
+}
+div.Gallery9 .GalleryPagerLinks .PreviousPage a {
+	background: url('images/button-previous.gif') no-repeat !important;
+	width: 20px;
+	height: 15px;
+}
+div.Gallery9 .GalleryPagerLinks .NextPage a {
+	background: url('images/button-next.gif') no-repeat !important;
+	width: 20px;
+	height: 15px;
+}
+.Gallery9 div.ImageContainerMiddle img {
+	max-width: 80px;
+	max-height: 50px;
+	_width: expression(this.width > 50 ? 50: true);
+	_height: expression(this.height > 50 ? 50: true);
+}
+
+
+/*
+Gallery 10
+===============================================================
+*/
+
+.Gallery10 {
+	width: 770px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.Gallery10 .GalleryContainer {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+.Gallery10 .GalleryTable {
+	border-collapse: collapse;
+	_background: transparent !important;
+}
+.Gallery10 .GalleryTable td, .Gallery10 .GalleryTable tr {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.Gallery10 .GalleryContainer .ThumbContainer {
+	border-collapse: collapse;
+	vertical-align: top;
+	width: 185px;
+}
+.Gallery9 .GalleryContainer .GalleryImageCell {
+	position: relative;
+}
+.Gallery10 .GalleryContainer .ThumbContainer .GalleryPagerLinks {
+	width: 185px;
+}
+.Gallery10 .GalleryContainer .ThumbContainer div.ImageContainerMiddle {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+}
+.Gallery10 .GalleryContainer .ContainerPadding {
+	border-collapse: collapse;
+	vertical-align: top;
+	width: 5px;
+}
+.Gallery10 .GalleryContainer .FullviewContainer {
+	border-collapse: collapse;
+	vertical-align: top;
+}
+.Gallery10 .GalleryTable .GalleryImageCell {
+	vertical-align: middle;
+	width: 120px;
+}
+.Gallery10 .GalleryTable .GalleryImageCell img {
+}
+.Gallery10 .GalleryTable .ParagraphContainer,
+.Gallery10 .GalleryTable .GalleryImageDescription {
+	display: none;
+}
+.Gallery10 .GalleryTable .GalleryColumnPadding {
+	width: 5px;
+}
+.Gallery10 .GalleryTable .GalleryRowPadding td {
+	height: 4px;
+}
+
+.Gallery10 .Fullview {
+	width: 580px;
+}
+
+.Gallery10 .Fullview .FullviewImage {
+	height: 435px;
+	width: 580px;
+}
+
+.Gallery10 .Fullview .FullviewImage img {
+	/* max-width for IE6 */
+	_width: expression(Math.min(this.clientWidth, 580) + "px");
+	border: 0;
+}
+
+div.Gallery10 .GalleryPagerLinks .PreviousPage {
+	width: 20px;
+	height: 15px;
+}
+div.Gallery10 .GalleryPagerLinks .NextPage {
+	width: 20px;
+	height: 15px;
+}
+div.Gallery10 .GalleryPagerLinks .PreviousPage a {
+	background: url('images/button-previous.gif') no-repeat !important;
+	width: 20px;
+	height: 15px;
+}
+div.Gallery10 .GalleryPagerLinks .NextPage a {
+	background: url('images/button-next.gif') no-repeat !important;
+	width: 20px;
+	height: 15px;
+}
+
+.Gallery10 div.ImageContainerMiddle img {
+	max-width: 120px;
+	max-height: 120px;
+	_width: expression(this.width > 120 ? 120: true);
+	_height: expression(this.height > 120 ? 120: true);
+}
+
+/*
+PopUp
+===============================================================
+*/
+
+div.PopupMask {
+	display: none;
+	background: black;
+	z-index: 10020;
+}
+
+.PopupContainer {
+	display: none;
+	position: absolute;
+	margin-top: 0;
+	top: 20px;
+	left: 20px;
+	width: 800px;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: white;
+	z-index: 10025;
+}
+.PopupContainer .PopupContainerTop {
+	height: 0;
+	_overflow: hidden;
+}
+.PopupContainer .PopupContainerBottom {
+	height: 0;
+	_overflow: hidden;
+}
+.PopupContainer .PopupImageClose {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 24px;
+	height: 24px;
+}
+.PopupContainer .PopupImageClose #ds-close,
+.PopupContainer .PopupImageClose .ds-close {
+	background: url('images/button-top-close.gif') no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;
+}
+
+.PopupContainer .PopupImage {
+	height: 600px;
+}
+.PopupContainer .PopupImage img {
+	margin: 0 auto;
+	max-width: 800px;
+	max-height: 6000px;
+	_width: expression(this.width > 800 ? 600: true);
+	_height: expression(this.height > 800 ? 600: true);
+}
+.PopupContainer .PopupImage div.PopupImageBackground {
+	background: white;
+}
+
+.PopupContainer .PopupControls {
+	border-collapse: collapse;
+	width: 100%;
+	height: 10px;
+}
+.PopupContainer .PopupControls td {
+	border-collapse: collapse;
+	padding: 3px 0;
+}
+.PopupContainer .PopupControls .PopupSlideshow {
+	width: 50px;
+	height: 15px;
+}
+.PopupContainer .PopupControls .PopupSlideshow #ds-play,
+.PopupContainer .PopupControls .PopupSlideshow .ds-play {
+	background: url('images/button-play.gif') no-repeat;
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: none;
+}
+.PopupContainer .PopupControls .PopupSlideshow #ds-pause,
+.PopupContainer .PopupControls .PopupSlideshow .ds-pause {
+	background: url('images/button-pause.gif') no-repeat;
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: none;
+}
+.PopupContainer .PopupControls .PopupSlideshow a.disabled#ds-play,
+.PopupContainer .PopupControls .PopupSlideshow a.disabled.ds-play {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: .3;
+}
+.PopupContainer .PopupControls .PopupSlideshow a.disabled#ds-pause,
+.PopupContainer .PopupControls .PopupSlideshow a.disabled.ds-pause {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: .3;
+}
+.PopupContainer .PopupControls .PopupNavigation {
+	text-align: center;	
+	height: 15px;
+	width: 120px;
+	margin: 0 auto;
+}
+.PopupContainer .PopupControls .PopupNavigation #ds-previous,
+.PopupContainer .PopupControls .PopupNavigation .ds-previous {
+	background: url('images/button-previous.gif') no-repeat;
+	float: left;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+.PopupContainer .PopupControls .PopupNavigation #ds-next,
+.PopupContainer .PopupControls .PopupNavigation .ds-next {
+	background: url('images/button-next.gif') no-repeat;
+	float: right;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+
+.PopupContainer .PopupControls .PopupNavigation .PopupPageNumbers {
+	font-size: 14px;
+	width: 75px;
+	text-align: center;
+	float: left;
+}
+
+.PopupContainer .PopupDescription {
+}
+
+/*
+Fullview
+===============================================================
+*/
+
+
+.Fullview {
+}
+.Fullview .FullviewImage img {
+	margin: 0 auto;
+}
+.Fullview .FullviewImage div.FullviewImageBackground {
+	background: white;
+}
+
+.Fullview .FullviewControls {
+	border-collapse: collapse;
+	width: 100%;
+	height: 10px;
+}
+.Fullview .FullviewControls td {
+	border-collapse: collapse;
+	padding: 3px 0;
+}
+.Fullview .FullviewControls .FullviewSlideshow {
+	width: 50px;
+	height: 15px;
+}
+.Fullview .FullviewControls .FullviewSlideshow #ds-play,
+.Fullview .FullviewControls .FullviewSlideshow .ds-play {
+	background: url('images/button-play.gif') no-repeat;
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: none;
+}
+.Fullview .FullviewControls .FullviewSlideshow #ds-pause,
+.Fullview .FullviewControls .FullviewSlideshow .ds-pause {
+	background: url('images/button-pause.gif') no-repeat;
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: none;
+}
+.Fullview .FullviewControls .FullviewSlideshow a.disabled#ds-play,
+.Fullview .FullviewControls .FullviewSlideshow a.disabled.ds-play {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: .3;
+}
+.Fullview .FullviewControls .FullviewSlideshow a.disabled#ds-pause,
+.Fullview .FullviewControls .FullviewSlideshow a.disabled.ds-pause {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: .3;
+}
+.Fullview .FullviewControls .FullviewNavigation {
+	text-align: center;	
+	height: 15px;
+	width: 120px;
+	margin: 0 auto;
+}
+.Fullview .FullviewControls .FullviewNavigation #ds-previous,
+.Fullview .FullviewControls .FullviewNavigation .ds-previous {
+	background: url('images/button-previous.gif') no-repeat;
+	float: left;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+.Fullview .FullviewControls .FullviewNavigation #ds-next,
+.Fullview .FullviewControls .FullviewNavigation .ds-next {
+	background: url('images/button-next.gif') no-repeat;
+	float: right;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+
+.Fullview .FullviewControls .FullviewNavigation .FullviewPageNumbers {
+	font-size: 14px;
+	width: 75px;
+	text-align: center;
+	float: left;
+}
+.Fullview .FullviewControls .FullviewFullscreen {
+	width: 50px;
+	height: 15px;
+}
+.Fullview .FullviewControls .FullviewFullscreen #ds-fullscreen,
+.Fullview .FullviewControls .FullviewFullscreen .ds-fullscreen {
+	background: url('images/button-fullscreen.gif') no-repeat;
+	float: right;
+	width: 20px;
+	height: 15px;
+	visibility: hidden;
+}
+
+.Fullview .FullviewDescription {
+}
+
+/*
+GalleryPagerLinks
+===============================================================
+*/
+
+div.GalleryPagerLinksContainer {
+	padding: 10px 0;
+}
+.GalleryPagerLinks {
+	width: 170px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	display: none;
+}
+div.Gallery9 .GalleryPagerLinks {
+	width: 145px !important;
+}
+
+.GalleryPagerLinks .PreviousPage {
+	width: 20px;
+	height: 15px;
+	border-collapse: collapse;
+}
+.GalleryPagerLinks .PageNumber {
+	height: 15px;
+	text-align: center;
+	border-collapse: collapse;
+}
+.GalleryPagerLinks .NextPage {
+	width: 20px;
+	height: 15px;
+	border-collapse: collapse;
+}
+
+.GalleryPagerLinks .PreviousPage a {
+	background: url('images/button-previous.gif') no-repeat;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+.GalleryPagerLinks .PreviousPage a.disabled {
+	width: 20px;
+	height: 15px;
+	display: block;
+	visibility: hidden;
+	cursor: default;
+}
+.GalleryPagerLinks .PageNumber a {
+	padding: 0 2px;
+}
+.GalleryPagerLinks .PageNumber a.active {
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 0 3px;
+}
+.GalleryPagerLinks .NextPage a {
+	background: url('images/button-next.gif') no-repeat;
+	width: 20px;
+	height: 15px;
+	display: block;
+}
+.GalleryPagerLinks .NextPage a.disabled {
+	width: 20px;
+	height: 15px;
+	display: block;
+	visibility: hidden;
+	cursor: default;
+}
+.GalleryPagerLinks a.more {
+	text-decoration: none;
+	padding: 0 !important;
+	cursor: default;
+}
+.GalleryPagerLinks a.more:hover {
+	text-decoration: none;
+	padding: 0 !important;
+	cursor: default;
+}
+
+/*
+Minor tweaks
+===============================================================
+*/
+
+div.PopupContainer#ds-container {
+	overflow-x: visible;
+}
+
+
+.GalleryContainerMiddle {
+	_display: block;
+	_height: 0;
+	_clear: both;
+}

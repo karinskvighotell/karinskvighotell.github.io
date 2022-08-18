@@ -1,0 +1,410 @@
+/* Test*/
+.ResponsiveDesign .MainPage { min-width: 300px; padding-right: 260px; }
+.ResponsiveDesign .MainPage .MainContainer .BodyTextContainer,
+.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer,
+.ResponsiveDesign .MainPage .NewsContainer { float: none; margin: 0; padding: 0; }
+.ResponsiveDesign .MainPage .MainContainer { float: left; position: relative; width: auto; min-width: 100%; }
+.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer { float: left; }
+.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ParagraphContainerBottom { padding: 0; }
+.ResponsiveDesign .MainPage .NewsContainer { float: left; margin-right: -100%; }
+
+.ResponsiveDesign .TextLayout1 .LeftColumn { margin-right: 230px; }
+.ResponsiveDesign .TextLayout1 .RightColumn { float: right; }
+
+.ResponsiveDesign .TextLayout2 .LeftColumn { margin: 0; padding: 0; padding-right: 1%; width: 48%; float: left; }
+.ResponsiveDesign .TextLayout2 .RightColumn { margin: 0; padding: 0; padding-left: 1%; width: 48%; float: right; }
+
+.ResponsiveDesign .FileArea .FileList td { vertical-align: top; }
+
+.ResponsiveDesign .Guestbook .GuestbookForm { float: left; }
+.ResponsiveDesign .Guestbook .GuestbookList { width: auto; margin-left: 210px; }
+.ResponsiveDesign .Guestbook .GuestBookEntryListContainer .EntryReplyForm .GuestBookFormControl { 
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+.ResponsiveDesign .Contact .LeftColumn {  margin-right: 330px; }
+.ResponsiveDesign .Contact .RightColumn { float: right; padding-left: 15px; }
+
+.ResponsiveDesign .Diary .ArticleList .EntriesColumn { margin-right: 240px; }
+.ResponsiveDesign .Diary .ArticleList .MenuColumn { float: right; }
+.ResponsiveDesign .Diary .DiaryContainer .LeftColumn { float: left; }
+.ResponsiveDesign .Diary .DiaryContainer .RightColumn { margin-left: 270px; }
+
+.ResponsiveDesign .Diary .EntriesColumn .CommentField a { display: block; }
+
+.ResponsiveDesign .Diary .DiaryCommentFormTable { width: auto; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentLabel { clear: both; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormCell { float: left; width: 33.333%; box-sizing: border-box; padding-left: 5px; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormCell:first-of-type { padding-left: 0; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormCell input { box-sizing: border-box; padding: 3px; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormRow { box-sizing: border-box; padding-top: 5px; }
+.ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormRow textarea { box-sizing: border-box; padding: 3px; }
+.ResponsiveDesign .Diary .DiaryCommentFormControl { width: auto; }
+.ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaImageTD, 
+.ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaSubmitTD { float: right; width: 50%; box-sizing: border-box; }
+.ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaImageTD { text-align: right; }
+.ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaSubmitTD input { box-sizing: border-box; padding: 3px; }
+.ResponsiveDesign .Diary .DiaryCommentFormControl .DiaryCommentSubmitTD { clear: right; padding: 10px 0; }
+
+.ResponsiveDesign .ImageGallery1 .GalleryNavigator,
+.ResponsiveDesign .ImageGallery2 .GalleryNavigator,
+.ResponsiveDesign .ImageGallery3 .GalleryNavigator { clear: both; }
+
+.ResponsiveDesign .ImageGallery1 .ImageContainer img,
+.ResponsiveDesign .ImageGallery2 .ImageContainer img,
+.ResponsiveDesign .ImageGallery3 .ImageContainer img { cursor: pointer; }
+
+.ResponsiveDesign .ImageGallery1 .ImageRow { clear: both; padding-bottom: 10px; }
+.ResponsiveDesign .ImageGallery1 .ImageCell { float: left; min-height: 90px; }
+.ResponsiveDesign .ImageGallery1 .ImageCell .ParagraphContainer { width: auto; padding: 0 5px; }
+
+.ResponsiveDesign .ImageGallery2 .FunctionTable { padding: 10px 0; }
+.ResponsiveDesign .ImageGallery2 .ImageRow { clear: both; padding-bottom: 10px; }
+.ResponsiveDesign .ImageGallery2 .ImageCell{ float: left; }
+.ResponsiveDesign .ImageGallery2 .TextCell { margin-left: 150px; }
+
+.ResponsiveDesign .ImageGallery3 .FunctionTable { padding: 10px 0; }
+.ResponsiveDesign .ImageGallery3 .ImageRow { clear: both; padding-bottom: 10px; }
+.ResponsiveDesign .ImageGallery3 .ImageCell{ float: left; }
+.ResponsiveDesign .ImageGallery3 .TextCell { margin-left: 70px; }
+
+
+.ResponsiveDesign .lg-backdrop { z-index: 10400; }
+.ResponsiveDesign .lg-outer {
+    background-color: #000 !important;
+	z-index: 10500;
+}
+
+.ResponsiveDesign .lg-slide p {
+    color: white;
+}
+
+.ResponsiveDesign #lg-gallery .lg-caption {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    padding: 5px 10px;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    color: white;
+    background: transparent url('images/arrow-down-white.png') no-repeat bottom right;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
+    white-space: normal;
+    text-align: left;
+    cursor: pointer;
+	box-sizing: border-box;
+}
+.ResponsiveDesign #lg-gallery .lg-caption.expanded {
+    max-height: 100%;
+    background-image: url('images/arrow-up-white.png');
+}
+.ResponsiveDesign #lg-gallery .lg-caption * {
+    width: auto;
+    font-size: 9pt;
+	font-family: Arial, Helvetica, Sans-Serif;
+    margin-bottom: 5px;
+    color: white !important;
+}
+
+.ResponsiveDesign #lg-comment {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 42px;
+    width: 28px;
+    z-index: 1090;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    background: url('images/lg-comment.png') no-repeat top left;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 2px;
+    text-decoration: none;
+}
+.ResponsiveDesign #lg-comment:hover {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+}
+.ResponsiveDesign #lg-comment.active {
+    width: 46px;
+}
+.ResponsiveDesign #lg-comment span.comment-text {
+    display: block;
+    width: 28px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.ResponsiveDesign #lg-action {
+    bottom: 20px;
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+}
+.ResponsiveDesign #lg-close,
+.ResponsiveDesign #lg-action a {
+    text-decoration: none;
+}
+
+.ResponsiveDesign .lSAction>a {
+    background-image: url('images/ls-controls.png');
+    margin-top: 0;
+}
+
+.ResponsiveDesign .Slide1 .lSAction>a,
+.ResponsiveDesign .Slide2 .lSAction>a {
+
+}
+
+.ResponsiveDesign .ls-auto-controls {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.ResponsiveDesign #lg-play-pause {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url('images/lg-play-pause.png') no-repeat bottom center;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 2px;
+}
+.ResponsiveDesign #lg-play-pause.playing { background-position: top center; }
+.ResponsiveDesign #lg-play-pause:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.ResponsiveDesign #ls-play-pause {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('images/ls-play-pause.png') no-repeat right center;
+    opacity: .5;
+    -webkit-transition: opacity .35s linear 0s;
+    transition: opacity .35s linear 0s;
+    cursor: pointer;
+}
+.ResponsiveDesign #ls-play-pause:hover { opacity: 1; }
+.ResponsiveDesign #ls-play-pause.playing { background-position: left center; }
+
+.ResponsiveDesign #ls-comment {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('images/ls-comment.png') no-repeat right center;
+    opacity: .5;
+    -webkit-transition: opacity .35s linear 0s;
+    transition: opacity .35s linear 0s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.ResponsiveDesign #ls-comment:hover { opacity: 1; }
+
+
+.ResponsiveDesign .lg-comment-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 120px 5px 50px 5px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+/*
+    background-color: black;
+    opacity: 0.8 !important;
+*/
+}
+
+.ResponsiveDesign .lg-comment-list .CommentListContainer {
+    width: auto;
+    max-width: 800px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-top: 1px solid white;
+    overflow: auto;
+    text-align: left;
+}
+.EditMode.ResponsiveDesign .lg-comment-list .CommentListContainer .EditButtons {
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.EditMode.ResponsiveDesign .lg-comment-list .CommentListContainer .CommentContainer {
+    margin-left: 30px;
+}
+
+.ResponsiveDesign .floating-comment-form {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5000;
+    width: 500px;
+    height: 100px;
+    margin-left: -250px;
+}
+.ResponsiveDesign .floating-comment-form .GalleryCommentFormControl { 
+    width: 100%;
+    box-sizing: border-box;
+}
+.ResponsiveDesign .floating-comment-form .GalleryCommentFormControl td span { 
+    color: white;
+    font-size: 9pt;
+    font-family: Arial, Sans-Serif;
+}
+.ResponsiveDesign .floating-comment-form .GalleryCommentFormControl textarea {
+    color: black;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 50px;
+}
+.ResponsiveDesign .floating-comment-form .GalleryCommentFormControl input.GalleryCommentSubmit { 
+    background: none;
+    background: url('images/lg-comment-submit.png') repeat-x;
+    width: 130px;
+    height: 25px;
+    font-size: 12px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.ResponsiveDesign .ImageGallery .Gallery1 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery2 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery3 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery4 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery5 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery6 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Gallery7 .ImageContainer img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.ResponsiveDesign .ImageGallery .Slide1 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Slide2 .ImageContainer img,
+.ResponsiveDesign .ImageGallery .Slide3 .ImageContainer img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.ResponsiveDesign .ImageGallery .GalleryImagesRow { display: none; }
+
+.ResponsiveDesign .ImageGallery .GalleryRowPadding { height: 10px; clear: both; }
+.ResponsiveDesign .ImageGallery .GalleryPagerLinks { clear: both; }
+
+.ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { float: left; width: 140px; margin-right: 10px; }
+.ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell .ImageContainer { text-align: center; }
+.ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell .ImageContainer img { display: inline-block; }
+
+.ResponsiveDesign .ImageGallery .Gallery2 .GalleryImageCell { float: left; }
+.ResponsiveDesign .ImageGallery .Gallery2 .GalleryTextCell { margin-left: 130px; }
+
+.ResponsiveDesign .ImageGallery .Gallery3 .GalleryImageCell { float: left; }
+.ResponsiveDesign .ImageGallery .Gallery3 .GalleryTextCell { margin-left: 60px; }
+
+.ResponsiveDesign .ImageGallery .Gallery4 .GalleryImageCell { float: left; width: 120px; padding-right: 10px; }
+.ResponsiveDesign .ImageGallery .Gallery4 .GalleryTextCell { float: left; width: 250px; padding-right: 10px; min-height: 10px; }
+
+.ResponsiveDesign .ImageGallery .Gallery5 .GalleryImageCell { float: left; width: 50px; padding-right: 10px; }
+.ResponsiveDesign .ImageGallery .Gallery5 .GalleryTextCell { float: left; width: 300px; padding-right: 10px; min-height: 10px; }
+
+.ResponsiveDesign .ImageGallery .Gallery6 .GalleryTable { width: 570px; }
+.ResponsiveDesign .ImageGallery .Gallery6 .GalleryRowPadding { height: 5px; }
+.ResponsiveDesign .ImageGallery .Gallery6 .GalleryCell { float: left; margin-right: 5px; }
+
+.ResponsiveDesign .ImageGallery .Gallery7 .GalleryTable { width: 610px; }
+.ResponsiveDesign .ImageGallery .Gallery7 .GalleryRowPadding { height: 5px; }
+.ResponsiveDesign .ImageGallery .Gallery7 .GalleryCell { float: left; margin-right: 5px; }
+
+.ResponsiveDesign .ImageGallery .Slide1,
+.ResponsiveDesign .ImageGallery .Slide2,
+.ResponsiveDesign .ImageGallery .Slide3 { width: 100%; max-width: 1600px; margin: 0 auto; padding-bottom: 20px; }
+
+.ResponsiveDesign .ImageGallery .Slide1 .ParagraphContainer,
+.ResponsiveDesign .ImageGallery .Slide2 .ParagraphContainer { margin-top: 10px; }
+
+.ResponsiveDesign .ImageGallery .Slide1 img,
+.ResponsiveDesign .ImageGallery .Slide2 img,
+.ResponsiveDesign .ImageGallery .Slide3 img,
+.ResponsiveDesign .ImageGallery .Slide1 .CommentContainer img,
+.ResponsiveDesign .ImageGallery .Slide2 .CommentContainer img,
+.ResponsiveDesign .ImageGallery .Slide3 .CommentContainer img { border: 0; }
+
+.ResponsiveDesign .ImageGallery .Slide1 .lSSlideOuter .lightSlider,
+.ResponsiveDesign .ImageGallery .Slide2 .lSSlideOuter .lightSlider,
+.ResponsiveDesign .ImageGallery .Slide3 .lSSlideOuter .lightSlider { margin: 0; }
+
+.ResponsiveDesign .ImageGallery .Slide3 #lg-comment-form,
+.ResponsiveDesign .ImageGallery .Slide3 .ls-auto-controls,
+.ResponsiveDesign .ImageGallery .Slide3 .ParagraphContainer { display: none; }
+.ResponsiveDesign .ImageGallery .Slide3 .ImageContainer { max-width: 100%; overflow: hidden; }
+.ResponsiveDesign .ImageGallery .Slide3 .ImageContainer img { max-width: 100%; }
+.ResponsiveDesign .ImageGallery .Slide3 .ls-auto-controls { top: 10px; }
+
+.ResponsiveDesign .lg-comment-list .CommentContainer,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerTop,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerMiddle,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerBottom,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerMiddle p.TimeStamp,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerMiddle p.Text { 
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+}
+
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerMiddle p.TimeStamp,
+.ResponsiveDesign .lg-comment-list .CommentContainer .CommentContainerMiddle p.Text { 
+    font-family: Arial, Sans-Serif;
+    font-size: 10pt;
+    font-weight: normal;
+    color: white;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.ResponsiveDesign .lg-comment-list .CommentContainer {
+    padding-bottom: 10px;
+    white-space: initial; 
+}
+

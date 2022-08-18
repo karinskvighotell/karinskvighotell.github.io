@@ -1,0 +1,112 @@
+
+
+/* tablets and desktop
+@media only screen and (min-width: 768px) {
+}
+*/
+
+/* phones
+@media only screen and (max-width: 768px) {
+}
+*/
+
+/* portrait phones 
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    
+}
+*/
+
+@media only screen and (max-width: 768px) 
+{ 
+    .ResponsiveDesign .Container,
+    .ResponsiveDesign .Container .ctr,
+    .ResponsiveDesign .Container .ctl,
+    .ResponsiveDesign .Container .cbr,
+    .ResponsiveDesign .Container .cbl,
+    .ResponsiveDesign .Container .cbody,
+    .ResponsiveDesign .Container .End,
+    .ResponsiveDesign .ContainerTable,
+    .ResponsiveDesign .NavigatorColumn,
+    .ResponsiveDesign .ContainerTable .NavigatorColumn .NavigatorContainer,
+    .ResponsiveDesign .ContentColumn,
+    .ResponsiveDesign .ContentHeader,
+    .ResponsiveDesign .ContainerTable .ContentColumn .ContentContainer,
+    .ResponsiveDesign .Container .ContentContainer .btl,
+    .ResponsiveDesign .Container .ContentContainer .btr,
+    .ResponsiveDesign .Container .ContentContainer .bbl,
+    .ResponsiveDesign .Container .ContentContainer .bbr,
+    .ResponsiveDesign .Container .ContentContainer .bbody,
+    .ResponsiveDesign .Container .ContentContainer .btclear,
+    .ResponsiveDesign .Container .ContentContainer .bbclear,
+    .ResponsiveDesign .Container .ContentContainer .cbclear,
+    .ResponsiveDesign .Container .ContentContainer .ContentBody { 
+        position: static;
+        min-height: initial;
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        border: 0;
+        float: none;
+    }
+    .ResponsiveDesign .LogoField { display: none; }
+
+    .ResponsiveDesign .PageHeader .HeaderField { padding: 10px 5px; }
+
+    .ResponsiveDesign .ContentColumn {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        background: #f0f0f0;
+        margin: 0 5px;
+        padding-bottom: 10px;
+    }
+
+    .ResponsiveDesign .DropMenu,
+    .ResponsiveDesign .DropMenu ul { 
+        width: 100%; 
+        top: 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .ResponsiveDesign ul.DropMenu li a,
+    .ResponsiveDesign ul.DropMenu li li a,
+    .ResponsiveDesign ul.DropMenu li li li a { color: white; }
+
+    .ResponsiveDesign .TextLayout1 .RightColumn .ParagraphContainer * { font-size: 9pt; }
+
+    .ResponsiveDesign .TextLayout2 .RightColumn { padding-top: 15px; }
+    .ResponsiveDesign .TextLayout2 .InlineImageContainer { margin-right: 0px; }
+    .ResponsiveDesign .TextLayout2 .InlineImageContainer .ParagraphContainer * { font-size: 9pt; }
+
+    .ResponsiveDesign .ImageGallery1 .FunctionTable .ImageCell { width: 140px; margin: 5px; }
+
+
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel { 
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: #4c4c4c;
+    }
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel * { 
+        font-family: Verdana, Sans-serif;
+        color: white;
+        font-weight: normal;
+    }
+
+    .ResponsiveDesign .Contact .RightColumn .ImageContainer,
+    .ResponsiveDesign .Contact .RightColumn .ParagraphContainer { margin-bottom: 10px; }
+    .ResponsiveDesign .Contact .RightColumn .ParagraphContainer * { font-size: 9pt; }
+
+    .ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { width: 125px; margin: 4px; }
+
+    .ResponsiveDesign .ImageGallery .Gallery4 .GalleryImageCell,
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryImageCell { margin-bottom: 10px; }
+
+    .ResponsiveDesign .ImageGallery .Slide1 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide2 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide3 .ImageContainer img { width: 100%; }
+
+}
+
+

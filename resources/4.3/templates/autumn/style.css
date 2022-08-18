@@ -1,0 +1,933 @@
+body {
+	margin: 0;
+	padding: 0 30px;
+}
+.Container {
+	margin: auto;
+	margin-top: 1em;
+	width: 800px; 
+}
+.Container .ctl {
+	margin-right: 9px; /* clip right corner */
+	background-image: url('images/bg_body.png');
+	height: 9px; /* vertical: show first half of the image with the top-corners in it */
+	font-size: 2px; /* correct height for IE */
+}
+.Container .ctr {
+	margin-top: -9px; /* to level of top-left corner */
+	margin-left: 9px; /* clip left corner */
+	background-image: url('images/bg_body.png');
+	background-position: 100% 0; /* show bg-image starting at the right */
+	height: 9px;
+	font-size: 2px;
+}
+.Container .cbl {
+	margin-right: 9px; /* clip right corner */
+	background-image: url('images/bg_body.png');
+	background-position: 0 -9px; /* show under half of the image */
+	height: 9px;
+	font-size: 2px;
+}
+.Container .cbr {
+	margin-top: -9px;
+	margin-left: 9px;
+	background-image: url('images/bg_body.png');
+	background-position: 100% -9px;
+	height: 9px;
+	font-size: 2px;
+}
+.Container .cbody {
+	position: relative;
+	_height: 500px;
+	min-height: 500px;
+}
+
+.Container .End {
+	position: absolute;
+	bottom: 0;
+	left: 13px;
+	height: 15px;
+	width: 157px;
+	z-index: 0;
+}
+
+.Container .ctclear {
+	margin-top: -1px;
+	padding-top: 1px;
+}
+.Container .cbclear {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+
+.ContainerTable {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.ContainerTable .NavigatorColumn {
+	width: 180px;
+	vertical-align: top;
+}
+.ContainerTable .ContentColumn {
+	vertical-align: top;
+}
+
+.Container .ContentContainer {
+	_height: 500px;
+	min-height: 500px;
+	margin-left: 180px;
+	margin-top: 4px;
+}
+
+.Container .ContentContainer .btl {
+	margin-right: 9px; /* clip right corner */
+	background-image: url('images/bg_content.png');
+	height: 9px; /* vertical: show first half of the image with the top-corners in it */
+	font-size: 2px; /* correct height for IE */
+}
+.Container .ContentContainer .btr {
+	margin-top: -9px; /* to level of top-left corner */
+	margin-left: 9px; /* clip left corner */
+	background-image: url('images/bg_content.png');
+	background-position: 100% 0; /* show bg-image starting at the right */
+	height: 9px;
+	font-size: 2px;
+}
+.Container .ContentContainer .bbl {
+	margin-right: 9px; /* clip right corner */
+	background-image: url('images/bg_content.png');
+	background-position: 0 -9px; /* show under half of the image */
+	height: 9px;
+	font-size: 2px;
+}
+.Container .ContentContainer .bbr {
+	margin-top: -9px;
+	margin-left: 9px;
+	background-image: url('images/bg_content.png');
+	background-position: 100% -9px;
+	height: 9px;
+	font-size: 2px;
+}
+.Container .ContentContainer .bbody {
+	background: #f0f0f0;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0;
+}
+.Container .ContentContainer .btclear {
+	margin-top: -1px;
+	padding-top: 1px;
+}
+.Container .ContentContainer .bbclear {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+
+.NavigatorContainer {
+	float: left;
+	width: 200px;
+	height: 515px;
+	margin-top: -1px;
+	margin-left: -30px;
+	padding-bottom: 11px;
+}
+
+.ContainerTable .NavigatorColumn .NavigatorContainer {
+	float: none;
+	margin-left: -31px;
+	margin-top: -2px;
+}
+
+.ContentHeader {
+	margin-right: 13px;
+}
+.ContentHeader .bbody {
+	min-height: 90px;
+	_height: 90px;
+}
+.ContentHeader h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+.ContentHeader a:hover { text-decoration: none; }
+.ContentHeader img {
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+}
+
+/*
+New PageHeader to enable TinyMCE 
+================================
+*/
+
+.PageHeader .LogoField {
+	float: left;
+}
+.PageHeader .LogoField img {
+	float: none;
+	margin: 0;
+	margin-right: 10px;
+}
+
+.PageHeader .HeaderField {
+}
+.PageHeader .HeaderField h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+.PageHeader .HeaderField img {
+	float: none;
+	margin: 0;
+}
+
+/*
+================================
+*/
+
+.ContainerTable .ContentColumn .ContentContainer {
+	float: none;
+	margin: 0;
+	margin-top: 4px;
+}
+
+.ContentBody {
+	margin: 10px 13px 4px 0;
+}
+.ContentBody .bbody {
+	min-height: 380px;
+	_height: 380px;
+}
+
+.PageFooter {
+	clear: both;
+	margin-top: 5px;
+	padding-bottom: 1em;
+}
+.PageFooter a {
+	color: white;
+	text-decoration: none;
+}
+.PageFooter a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.CopyrightText {
+	margin-left: 2px;
+	color: white;
+	font-size: 8pt;
+	width: 680px;
+}
+.CopyrightText p { margin: 0; padding: 0; color: white; font-size: 8pt; }
+
+.dinStudioLink {
+	float: right;
+	margin-right: 2px;
+	font-size: 8pt;
+	text-align: right;
+}
+
+/*
+Functions
+===================================================================================================
+*/
+
+.MainPageInlineContainer {
+	float: left;
+	margin: 0;
+	margin-bottom: 5px;
+	display: inline;
+}
+.MainPageInlineContainer .ImageContainer {
+	width: 200px;
+	text-align: center;
+	margin-right: 5px;
+}
+.MainPageInlineContainer .ParagraphContainer {
+	width: 200px;
+	font-size: 10px;
+	margin-right: 5px;
+}
+.MainPage .NewsContainer {
+	float: right;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: 1px solid #ccc; 
+	width: 180px;
+	font-size: 11px;
+}
+.MainPage .NewsItem .date { font-size: 11px; font-style: italic; }
+.MainPage .NewsItem { text-align: left; font-size: 11px; margin-bottom: 10px;}
+.MainPage .NewsItem p { padding: 0; margin: 0; }
+
+.MainPage .BodyTextContainer {
+}
+	
+
+.EmptyPage {
+}
+
+.TextLayout1 {
+}
+.TextLayout1 .FunctionTable {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+.TextLayout1 .LeftColumn {
+	vertical-align: top;
+	padding-right: 10px;
+}
+.TextLayout1 .RightColumn {
+	width: 190px;
+	vertical-align: top;
+	padding-left: 0.5em;
+}
+.TextLayout1 .RightColumn img {
+	margin-bottom: 5px;
+}
+.TextLayout1 .RightColumn {
+	font-size: 11px;
+}
+
+.TextLayout2 {
+}
+.TextLayout2 .FunctionTable {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+.TextLayout2 .LeftColumn {
+	width: 50%;
+	padding-right: 5px;
+	vertical-align: top;
+}
+.TextLayout2 .RightColumn {
+	width: 50%;
+	padding-left: 5px;
+	vertical-align: top;
+}
+.TextLayout2 .InlineImageContainer {
+	float: left;
+}
+.TextLayout2 .InlineImageContainer .ImageContainer {
+	margin-top: 2px;
+	margin-right: 8px;
+}
+.TextLayout2 .InlineImageContainer .ParagraphContainer {
+	width: 180px;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-size: 8pt;
+}
+
+.GalleryDescription {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.GalleryDescription #text {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 45px;
+	text-align: center;
+	color: White;
+}
+.GalleryDescription img { margin: 0 auto 5px auto; }
+
+.GalleryNavigator {
+	margin: 10px auto;
+	width: 140px;
+	height: 30px;
+}
+.GalleryNavigator span.Previous { display: block; float: left; width: 50px; height: 30px; }
+.GalleryNavigator a.Previous {
+	display: block; 
+	float: left; 
+	width: 50px; 
+	height: 30px; 
+	text-decoration: none;
+}
+.GalleryNavigator a.Previous:hover { text-decoration: none; }
+.GalleryNavigator .PageNumber { 
+	display: block; 
+	float: left; 
+	text-align: center; 
+	font-weight: bold; 
+	font-size: 12px;
+	margin: 0 5px;
+	width: 30px; 
+	height: 22px;
+	padding-top: 8px; 
+}
+.GalleryNavigator span.Next { display: block; float: left; width: 50px; height: 30px; }
+.GalleryNavigator a.Next { 
+	display: block; 
+	float: left; 
+	width: 50px;
+	height: 30px;
+	text-decoration: none;
+}
+.GalleryNavigator a.Next:hover { text-decoration: none; }
+
+
+.ImageGallery1 {
+}
+.ImageGallery1 .FunctionTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 10px;
+}
+.ImageGallery1 .ImageCell {
+	width: 166px;
+	vertical-align: top;
+}
+.ImageGallery1 .ImageCell .ImageContainer { 
+	text-align: center; 
+	margin-bottom: 2px; 
+}
+.ImageGallery1 .ImageCell .ParagraphContainer {
+	margin-top: 0;
+	line-height: normal;
+	font-size: 11px;
+	width: 164px;
+}
+
+.ImageGallery2 {
+}
+.ImageGallery2 .FunctionTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 1em;
+}
+.ImageGallery2 .ImageCell {
+	width: 200px;
+	vertical-align: top;
+}
+.ImageGallery2 .ImageCell .ImageContainer { 
+	text-align: center; 
+	margin-bottom: 2px; 
+}
+.ImageGallery2 .TextCell {
+	vertical-align: top;
+}
+.ImageGallery2 .TextCell {
+	margin-top: 0;
+	text-align: left;
+}
+
+.ImageGallery3 {
+}
+.ImageGallery3 .FunctionTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 1em;
+}
+.ImageGallery3 .ImageCell {
+	width: 65px;
+	vertical-align: top;
+}
+.ImageGallery3 .ImageCell .ImageContainer { 
+	text-align: center; 
+	margin-bottom: 2px; 
+}
+.ImageGallery3 .TextCell {
+	vertical-align: top;
+}
+.ImageGallery3 .TextCell p {
+	margin-top: 0;
+	text-align: left;
+}
+
+.SplashScreen {
+	margin-top: 4em;
+	color: white;
+}
+
+.SplashScreen .FunctionTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	margin-top: 1em;
+}
+
+.FileArea {
+}
+.FileArea .FunctionTable { 
+	margin: 15px auto;
+	width: 500px;
+}
+.FileArea .IconCell { width: 50px; text-align: right; vertical-align: top; }
+.FileArea .TextCell { padding-left: 5px; vertical-align: middle; }
+.FileArea .SizeCell { width: 70px; vertical-align: middle; text-align: right; padding-right: 35px; }
+.FileArea .FileList { margin: 5px 0; width: 500px; border-collapse: collapse; }
+.FileArea .FileSort { width: 500px; margin: 0 auto; }
+.FileArea .FileSort p { margin: 0 0 3px 0; font-size: 8pt; }
+
+.Diary {
+}
+.Diary .FunctionTable { 
+	margin: 0 auto;
+	width: 100%;
+}
+.Diary .FunctionTable td { vertical-align: top; }
+.Diary .FunctionTable .LeftColumn {
+	margin: 0;
+	width: 175px;
+	font-size: 5pt;
+	text-align: left;
+	border-right: 1px solid #ccc; 
+	padding-right: 10px;
+}
+.Diary .FunctionTable .RightColumn {
+}
+.Diary .DiaryList {
+}
+.Diary .DiaryListItem { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 5px; }
+.Diary .DiaryListItem h2 { font-size: 13px; margin: 0; }
+
+.Diary .DiaryList .GroupByDay li.FirstLevelItem {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px; 
+	margin-bottom: 5px;
+}
+.Diary .DiaryList .GroupByDay li.FirstLevelItem,
+.Diary .DiaryList .GroupByMonth ul.SecondLevel li,
+.Diary .DiaryList .GroupByYear ul.ThirdLevel li {
+	padding-bottom: 5px; 
+	margin-bottom: 5px;
+}
+.Diary .DiaryList .GroupByDay a,
+.Diary .DiaryList .GroupByMonth a,
+.Diary .DiaryList .GroupByYear a {
+	font-family: "Comic Sans MS", verdana, helvetica, arial, sans-serif;
+	font-size: 13px;
+	margin: 0;
+}
+.Diary .DiaryList .GroupByMonth ul.SecondLevel,
+.Diary .DiaryList .GroupByYear ul.SecondLevel { 
+	padding: 0;
+}
+.Diary .DiaryList .GroupByYear ul.ThirdLevel { 
+	padding-left: 5px;
+}
+.Diary .DiaryList .GroupByMonth ul.SecondLevel,
+.Diary .DiaryList .GroupByYear ul.SecondLevel { 
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top: 5px; 
+	margin-bottom: 5px;
+}
+.Diary .DiaryView {	padding-left: 10px;	}
+.Diary .DiaryView .DiaryDate h3 { font-size: 12px; font-style: italic; }
+
+/*
+New Diary Comment Form
+========================================================================
+*/
+
+.Diary .DiaryCommentFunction {
+	width: 380px;
+}
+
+.Diary .DiaryDateInput {
+	font-family: "Comic Sans MS", verdana, helvetica, arial, sans-serif;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+.Diary .DiaryCommentForm input.DiaryCommentSubmit { 
+	border: 1px solid black; 
+	background-color: #ccc; 
+	font-size: 11px;
+	width: 130px;
+	padding-bottom: 3px;
+	_padding: 0;
+	height: 20px;
+}
+.Diary .DiaryCommentListContainer .CommentCountContainer h2 {
+	border-top: 0;
+	border-bottom: 1px solid #ccc;
+}
+.Diary .DiaryCommentListItemContainer {
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.Diary .DiaryCommentFormTable input {
+	border: 1px solid #555;
+}
+.Diary .DiaryCommentFormTable textarea {
+	border: 1px solid #555;
+}
+.Diary .DiaryCommentListItemContainerMiddle h2 {
+	font-weight: bold;
+}
+
+/*
+========================================================================
+*/
+
+.Guestbook {
+}
+.Guestbook .FunctionTable {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+.Guestbook .GuestbookForm {
+	margin: 0;
+	width: 200px;
+	font-size: 11px;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.Guestbook .GuestbookList {
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+	vertical-align: top;
+}
+.Guestbook .GuestbookListItemContainer  {
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.Guestbook .GuestbookList h2 { font-size: 14px; }
+.Guestbook .GuestbookList .GuestbookDate { font-size: 13px; }
+.Guestbook .GuestbookForm input.textname { width: 200px; border: 1px solid #555; margin-bottom: 10px; }
+.Guestbook .GuestbookForm input.textemail { width: 200px; border: 1px solid #555; margin-bottom: 10px; }
+.Guestbook .GuestbookForm textarea.textmessage { width: 200px; height: 130px; border: 1px solid #555; margin-bottom: 10px; }
+.Guestbook .GuestbookForm input.GuestSubmit { 
+	border: 1px solid black; 
+	background-color: #ccc; 
+	font-size: 11px;
+	width: 130px;
+	padding-bottom: 3px;
+	_padding: 0;
+	height: 20px;
+}
+
+.Contact {
+}
+.Contact .FunctionTable {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+.Contact .LeftColumn {
+	vertical-align: top;
+	padding-right: 10px;
+}
+.Contact .RightColumn {
+	width: 300px;
+	vertical-align: top;
+	padding-left: 0.5em;
+}
+.Contact .RightColumn img {
+	margin-bottom: 5px;
+}
+.Contact .RightColumn {
+	font-size: 11px;
+}
+.Contact .ContactForm { margin-top: 10px; }
+.Contact .ContactForm input.text { width: 260px; border: 1px solid #555; margin-bottom: 10px; }
+.Contact .ContactForm textarea.textmessage { width: 260px; height: 130px; border: 1px solid #555; margin-bottom: 10px; }
+.Contact .ContactForm input.ContactSubmit { 
+	border: 1px solid black; 
+	background-color: #ccc; 
+	font-size: 11px;
+	width: 130px;
+	padding-bottom: 3px;
+	_padding: 0;
+	height: 20px;
+}
+
+.GalleryCommentFormControl textarea { border: 1px solid #555; }
+.GalleryCommentFormControl input.GalleryCommentSubmit { 
+	border: 1px solid black; 
+	background-color: #ccc; 
+	font-size: 11px;
+	width: 130px;
+	padding-bottom: 3px;
+	_padding: 0;
+	height: 20px;
+}
+div.CommentContainer p.TimeStamp {
+	font-size: 11px;
+}
+
+/*
+Drop down menu
+===================================================================================================
+*/
+.DropMenu {
+	position: relative;
+	top: 100px;
+}
+
+.DropMenu, .DropMenu ul {
+	/* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	width: 11em;
+	position: relative;
+	z-index: 1;
+}
+
+.DropMenu li {
+	/* all list items */
+	position: relative;
+	float: left;
+	margin-bottom: -1px;
+	width: 174px;
+}
+
+.DropMenu li ul {
+	/* second-level lists */
+	position: absolute;
+	z-index: 2;
+	left: -999em;
+	margin-left: 200px;
+	margin-top: -22px;
+}
+
+.DropMenu li ul ul {
+	/* third-and-above-level lists */
+	left: -999em;
+}
+
+.DropMenu li a {
+	width: 174px;
+	display: block;
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+	background: #4c4c4c;
+	border: 1px solid #bbb;
+	border-right: 0;
+	padding: 3px 20px 3px 5px;
+}
+
+.DropMenu a.parent {
+	background: #4c4c4c url('images/arrow.gif') right center no-repeat;
+}
+
+.DropMenu a.parent:hover {
+	background: #888888 url('images/arrow.gif') right center no-repeat;
+}
+
+.DropMenu a.toplevel {
+	margin-top: 5px;
+	display: block;
+	color: white;
+}
+
+.DropMenu li a:hover {
+	color: white;
+	background: #888888;
+	text-decoration: none;
+}
+
+.DropMenu li:hover ul ul, .DropMenu li:hover ul ul ul, .DropMenu li.sfhover ul ul, .DropMenu li.sfhover ul ul ul {
+	left: -999em;
+}
+
+.DropMenu li:hover ul, .DropMenu li li:hover ul, .DropMenu li li li:hover ul, .DropMenu li.sfhover ul, .DropMenu li li.sfhover ul, .DropMenu li li li.sfhover ul {
+	/* lists nested under hovered list items */
+	left: auto;
+}
+
+.DropMenu li:hover, .DropMenu li.hover {
+	position: static;
+}
+
+/*
+Gallery
+===============================================================
+*/
+
+.GalleryTable {
+	_background: transparent !important;
+}
+
+.GalleryTable div.GalleryImageDescription,
+.GalleryTable div.GalleryImageDescription p {
+	font-size: 8pt;
+}
+.GalleryTable .GalleryColumnPadding {
+	width: 15px !important;
+}
+
+div.Gallery1, div.Gallery4, div.Gallery5,
+div.Gallery7, div.Gallery8, div.Gallery9, div.Gallery10 {
+	width: 580px;
+	margin: 0 auto;
+}
+
+div.Gallery1 .GalleryTable, 
+div.Gallery4 .GalleryTable, 
+div.Gallery5 .GalleryTable, 
+div.Gallery7 .GalleryTable,
+div.Gallery8 .GalleryContainer,
+div.Gallery9 .GalleryContainer,
+div.Gallery10 .GalleryContainer {
+	width: 580px;
+	margin: 0 auto;
+}
+
+div.Gallery9 .GalleryTable .GalleryColumnPadding,
+div.Gallery10 .GalleryTable .GalleryColumnPadding {
+	width: 2px !important;
+}
+div.Gallery9 .GalleryTable tr.GalleryRowPadding td,
+div.Gallery10 .GalleryTable tr.GalleryRowPadding td {
+	height: 2px !important;
+}
+
+.Gallery8 .Fullview {
+	width: 580px;
+}
+.Gallery8 .Fullview .FullviewImage {
+	width: 580px;
+	height: 435px;
+}
+.Gallery8 .Fullview .FullviewImage img {
+	_width: expression(Math.min(this.clientWidth, 580) + "px");
+}
+.Gallery9 .Fullview {
+	width: 420px;
+}
+.Gallery9 .Fullview .FullviewImage {
+	width: 420px;
+	height: 315px;
+}
+.Gallery9 .Fullview .FullviewImage img {
+	_width: expression(Math.min(this.clientWidth, 420) + "px");
+}
+
+.Gallery10 .Fullview {
+	width: 380px;
+}
+.Gallery10 .Fullview .FullviewImage {
+	width: 380px;
+	height: 285px;
+}
+.Gallery10 .Fullview .FullviewImage img {
+	_width: expression(Math.min(this.clientWidth, 380) + "px");
+}
+
+div.Gallery9 .GalleryPagerLinksContainer {
+	width: 135px !important;
+}
+div.Gallery9 .GalleryPagerLinks {
+	width: 135px !important;
+}
+div.Gallery10 .GalleryPagerLinksContainer {
+	width: 160px !important;
+}
+div.Gallery10 .GalleryPagerLinks {
+	width: 160px !important;
+}
+
+.GalleryPagerLinks .PreviousPage {
+	width: 50px;
+	height: 30px;
+}
+.GalleryPagerLinks .NextPage {
+	width: 50px;
+	height: 30px;
+}
+.GalleryPagerLinks .PreviousPage a {
+	width: 50px;
+	height: 30px;
+}
+.GalleryPagerLinks .PageNumber {
+	font-size: 12px;
+}
+.GalleryPagerLinks .NextPage a {
+	width: 50px;
+	height: 30px;
+}
+
+/*
+===============================================================
+*/
+
+.ClearBoth { clear: both; }
+
+.ResponsiveDesign .ContainerTable { width: 800px; }
+.ResponsiveDesign .NavigatorColumn { float: left; width: 180px; }
+.ResponsiveDesign .ContentColumn { float: right; width: 616px;  }
+
+.ResponsiveDesign .ContainerTable .NavigatorColumn .NavigatorContainer { margin-left: -30px; }
+
+.ResponsiveDesign .MainPage { padding-right: 185px; }
+.ResponsiveDesign .MainPage .MainContainer { margin-right: 5px; }
+.ResponsiveDesign .MainPage .NewsContainer { width: 180px; padding-left: 5px; }
+
+
+.ResponsiveDesign .TextLayout1 .RightColumn { width: 200px; padding-left: 10px; }
+.ResponsiveDesign .TextLayout1 .LeftColumn { margin-right: 210px; }
+
+.ResponsiveDesign .TextLayout2 .LeftColumn,
+.ResponsiveDesign .TextLayout2 .RightColumn { width: 285px; padding: 0;}
+
+.ResponsiveDesign .ImageGallery1 .FunctionTable { width: 540px; }
+.ResponsiveDesign .ImageGallery1 .FunctionTable .ImageCell { width: 170px; margin: 5px; }
+.ResponsiveDesign .ImageGallery1 .ImageCell .ParagraphContainer { padding: 5px; }
+
+.ResponsiveDesign .ImageGallery2 .ImageCell { width: 120px; }
+.ResponsiveDesign .ImageGallery2 .TextCell { margin-left: 130px; }
+
+.ResponsiveDesign .ImageGallery3 .ImageCell { width: 50px; }
+.ResponsiveDesign .ImageGallery3 .TextCell { margin-left: 60px; }
+
+.ResponsiveDesign .Diary .FunctionTable .LeftColumn { width: 175px; }
+.ResponsiveDesign .Diary .ArticleList .EntriesColumn { margin-right: 185px; }
+.ResponsiveDesign .Diary .DiaryContainer .RightColumn { margin-left: 185px; }
+
+.ResponsiveDesign .Diary .ArticleList .MenuColumn { width: 180px; }
+.ResponsiveDesign .Diary .ArticleList .EntriesColumn img,
+.ResponsiveDesign .Diary .DiaryContainer .RightColumn .DiaryItemContainer img { max-width: 100%; }
+
+.ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { margin-right: 5px; }
+
+.ResponsiveDesign .ImageGallery .Gallery4 .GalleryImageCell { width: 120px; }
+.ResponsiveDesign .ImageGallery .Gallery4 .GalleryTextCell { width: 150px; }
+
+.ResponsiveDesign .ImageGallery .Gallery5 .GalleryImageCell { width: 50px; }
+.ResponsiveDesign .ImageGallery .Gallery5 .GalleryTextCell { width: 220px; }
+
+.ResponsiveDesign .ImageGallery .Gallery7 .GalleryTable { width: 580px; }
+.ResponsiveDesign .ImageGallery .Gallery7 .GalleryCell { margin-right: 3px; }
+
+.ResponsiveDesign .ImageGallery .Slide1 ul,
+.ResponsiveDesign .ImageGallery .Slide2 ul,
+.ResponsiveDesign .ImageGallery .Slide3 ul { margin: 0; }
+
+.ResponsiveDesign .ImageGallery .Slide1,
+.ResponsiveDesign .ImageGallery .Slide2,
+.ResponsiveDesign .ImageGallery .Slide3 { width: 580px; }
+
+.ResponsiveDesign .ImageGallery .Slide1 img,
+.ResponsiveDesign .ImageGallery .Slide2 img { max-width: 580px; border: 0; }

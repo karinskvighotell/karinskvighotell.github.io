@@ -1,0 +1,37 @@
+body {
+	background-image: url("images/bg_grad.jpg");
+}
+
+a { color: #3D5C7A; }
+a:hover { color: #6A7797; }
+
+h1 { color: #6A7797; }
+h2 { color: #6A7797; }
+h3 { color: #6A7797; }
+h4 { color: #6A7797; }
+h5 { color: #6A7797; }
+h6 { color: #6A7797; }
+
+.NavigatorContainer {
+	background: url("images/bg_menu.jpg") top right no-repeat; 
+}
+.Container .cbody {
+	background: url('images/bg_container.jpg');
+}
+
+.GalleryNavigator a.Previous { background: url('images/gallery_prev.gif') no-repeat center left; }
+.GalleryNavigator .PageNumber { color: #6A7797; }
+.GalleryNavigator a.Next { background: url('images/gallery_next.gif') no-repeat center right; }
+
+.Diary .DiaryDateInput { color: #6A7797; }
+.Diary .DiaryList .GroupByDay a,
+.Diary .DiaryList .GroupByMonth a,
+.Diary .DiaryList .GroupByYear a { color: #6A7797; }
+
+table.GalleryPagerLinks td.PreviousPage a { background: url('images/gallery_prev.gif') no-repeat center left; }
+table.GalleryPagerLinks td.NextPage a { background: url('images/gallery_next.gif') no-repeat center right; }
+
+.Container .End {
+	background: url('images/bg_end.jpg');
+}
+

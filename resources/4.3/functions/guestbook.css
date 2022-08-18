@@ -1,0 +1,147 @@
+
+.Guestbook .GuestBookSentMessage {
+	background: #e4fae7 url('images/sent-check-small.gif') no-repeat bottom right;
+	border: 1px dashed #2f7f0a;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.Guestbook .GuestBookSentMessage p {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 9pt;
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+.Guestbook .SettingsButtons {
+	margin: 20px 0;
+}
+
+
+.Guestbook .GuestBookFormControl {
+	width: 100%;
+	margin-top: 5px;
+}
+.Guestbook .GuestBookFormControl td {
+    font-size: 0;
+}
+.Guestbook .GuestBookFormControl p {
+    font-size: 9pt;
+}
+.Guestbook .GuestBookFormControl .GuestBookSmiliesTD {
+	vertical-align: top;
+}
+.Guestbook .GuestBookFormControl .GuestBookSmiliesTD img {
+	_position: static !important;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border: 0;
+}
+
+.Guestbook ..GuestBookFormControl .GuestBookSubmitTD {
+	vertical-align: top;
+}
+
+td.GuestbookList .GuestBookFormControl td.GuestBookSmiliesTD {
+}
+
+.Guestbook .GuestbookList {
+	width: 100%;
+}
+
+.Guestbook .GuestBookEntryListContainer {
+	_background: transparent !important;
+}
+
+.GuestBookEntryListContainer .GuestbookEntryFormContainer {
+	border: 1px solid #7d7d7d;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+}
+
+.GuestBookEntryListContainer .GuestbookEntryFormContainer > div {
+	height: 20px;
+	padding: 3px 10px 7px 10px;
+	background-color: #ededed;
+	border-bottom: 0;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+}
+
+.GuestBookEntryListContainer .GuestbookEntryFormContainer .textmessage {
+	width: 99%;
+	height: 60px;
+	border: 1px solid #777;
+}
+
+.GuestBookEntryListContainer .GuestbookEntryFormContainer .GuestBookFormControl {
+	border-collapse: collapse;
+}
+
+.GuestBookEntry .GuestbookEntryReplyContainer {
+	padding: 5px 10px 5px 40px;
+	min-height: 32px;
+	_height: 32px;
+	background: url('images/reply-item.png') no-repeat left 4px !important;
+	_background: none;
+}
+.GuestBookEntry .GuestbookEntryReplyContainer .GuestbookEntryReply span {
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.Guestbook div.GuestBookCount p {
+	font-size: 10pt;
+	padding-bottom: 10px;
+}
+.Guestbook div.GuestBookCount span.GuestBookCountNr {
+	font-weight: bold;
+}
+
+/* Fix för IE med pagern*/
+.Guestbook .GuestbookList .GuestBookEntry { position: relative; }
+.Guestbook .GuestbookList .GuestBookEntry input {
+	behavior: none;
+}
+
+.Guestbook .GuestbookList .GuestBookEntry img {
+	border: 0;
+	_position: static !important;
+}
+
+.Guestbook .GuestbookList .GuestbookListItemContainer {
+	width: 100%;
+}
+
+.Guestbook .GuestbookList .GuestbookListItemContainer p {
+	padding: 0;
+	margin: 0;
+}
+
+.Guestbook .NewItem .GuestbookListItemContainer h2 {
+}
+.Guestbook .NewItem .GuestbookListItemContainer .GuestbookListItem {
+	background: url('images/new-item.png') no-repeat left 4px !important;
+	_background: url('images/new-item-ie6.gif') no-repeat left 4px !important;
+	padding-left: 40px;
+	_height: 40px;
+	min-height: 40px;
+}
+
+.Guestbook .GuestbookListItemContainer span.NoMail {
+	font-style: italic;
+	font-size: 8pt;
+}
+
+/* Fix för p-taggar i label*/
+
+.Guestbook .GuestbookForm .GuestbookFormContainer .GuestBookName p, 
+.Guestbook .GuestbookForm .GuestbookFormContainer .GuestBookEmail p,
+.Guestbook .GuestbookForm .GuestbookFormContainer .GuestBookHomePage p, 
+.Guestbook .GuestbookForm .GuestbookFormContainer .GuestBookMessage p {
+	margin: 0;
+	padding: 0;
+}

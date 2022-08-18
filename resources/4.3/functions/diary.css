@@ -1,0 +1,300 @@
+
+/*
+New Diary Comment Form
+========================================================================
+*/
+
+.Diary .FunctionTable {
+	width: 100%;
+}
+
+.Diary .DiaryCommentFunction {
+	width: 550px;
+}
+
+.Diary .DiaryCommentFunction img {
+	border: 0;
+	vertical-align: middle;
+}
+
+.Diary .DiaryDateInput {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	border: 0;
+	width: 100px;
+	background-color: transparent;
+}
+
+.Diary .DiaryCommentSentMessage {
+	background: #e4fae7 url('images/sent-check.gif') no-repeat 10px 10px;
+	border: 1px dashed #2f7f0a;
+	padding: 10px 10px 10px 70px;
+	min-height: 50px;
+	margin: 10px 3px;
+}
+.Diary .DiaryCommentSentMessage p {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 10pt;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+.Diary .DiaryContainer .SettingsButtons {
+	margin: 10px 0 40px 0;
+}
+.Diary .DiaryCommentForm {
+
+}
+
+.Diary .DiaryCommentListContainer {
+	margin: 0;
+	margin-top: 30px;
+}
+.Diary .DiaryCommentListItemContainer .DiaryCommentListItem {
+	font-size: 9pt;
+}
+.Diary .DiaryCommentListItemContainer .DiaryCommentListItem img {
+	_position: static !important;
+}
+.Diary .DiaryCommentListItemContainer .DiaryCommentListItemContainerMiddle h2 {
+	font-size: 10pt;
+}
+
+.Diary .DiaryCommentListItemContainer .DiaryCommentListItemContainerMiddle .DiaryCommentDate {
+	font-size: 9pt;
+}
+
+.Diary .DiaryCommentListContainer .CommentCountContainer h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	font-weight: bold;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.Diary .DiaryCommentForm span.CommentLabel {
+	font-size: 10px;
+	display: block;
+	padding-top: 5px;
+}
+
+.Diary .DiaryCommentListItemContainer {
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.Diary .DiaryCommentFormTable {
+	width: 100%;
+}
+.Diary .DiaryCommentFormTable td {
+	width: 33%;
+	padding: 0 3px;
+}
+.Diary .DiaryCommentFormTable input {
+	width: 100%;
+	border: 1px solid black;
+}
+.Diary .DiaryCommentFormTable textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.Diary .DiaryCommentFormControl {
+	width: 100%;
+	margin-top: 5px;
+}
+.Diary .DiaryCommentFormControl .DiaryCommentSmiliesTD {
+	vertical-align: top;
+}
+.Diary .DiaryCommentFormControl .DiaryCommentSmiliesTD img {
+	_position: static !important;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.Diary .DiaryCommentFormControl .DiaryCommentSubmitTD {
+	vertical-align: top;
+	text-align: right;
+}
+
+.Diary .DiaryCommentForm input.DiaryCommentSubmit { 
+	border: 1px solid black; 
+	background-color: #ccc; 
+	font-size: 11px;
+	width: 130px;
+	padding-bottom: 3px;
+	_padding: 0;
+	height: 20px;
+}
+
+
+.Diary .DiaryList .NewItem .DiaryListItem {
+	background: url('images/new-item-16.png') no-repeat;
+	_background: url('images/new-item-16-ie6.gif') no-repeat;
+	padding-left: 20px;
+}
+.Diary .DiaryList .NewItem .DiaryListItem h2 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.Diary .DiaryView .DiaryCommentListContainer .NewItem .DiaryCommentListItemContainerMiddle {
+	background: url('images/new-item.png') no-repeat left 4px !important;
+	_background: url('images/new-item-ie6.gif') no-repeat left 4px !important;
+	padding-left: 40px;
+	_height: 40px;
+	min-height: 40px;
+}
+
+.Diary .DiaryView .DiaryCommentListContainer span.NoMail {
+	font-style: italic;
+	font-size: 8pt;
+}
+
+.Diary .DiaryCommentFormControl .CaptchaImageTD {
+	vertical-align: top;
+	width: 50%;
+}
+.Diary .DiaryCommentFormControl .CaptchaSubmitTD {
+	vertical-align: top;
+	width: 50%;
+}
+.Diary .DiaryCommentFormControl .CaptchaSubmitTD p {
+	font-size: 9pt;
+}
+
+
+/*
+========================================================================
+*/
+
+/*
+New Diary Menu
+========================================================================
+*/
+
+.Diary .DiaryList li,
+.Diary .DiaryList ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.Diary .DiaryList a {
+	font-size: 9pt;
+	font-weight: bold;
+
+}
+
+.Diary .DiaryList .LevelOneDate,
+.Diary .DiaryList .LevelTwoDate,
+.Diary .DiaryList .LevelThreeDate {
+	cursor: pointer;
+}
+
+.Diary .DiaryList .BackToIndex {
+	padding-bottom: 20px;
+}
+
+
+.Diary .DiaryList .GroupByMonth .FirstLevel .LevelOneDate {
+	font-size: 13pt;
+}
+.Diary .DiaryList .GroupByMonth ul.SecondLevel {
+	padding-left: 10px;
+}
+
+.Diary .DiaryList .GroupByYear .FirstLevel .LevelOneDate {
+	font-size: 16pt;
+}
+.Diary .DiaryList .GroupByYear .SecondLevel .LevelTwoDate {
+	font-size: 13pt;
+}
+.Diary .DiaryList .GroupByYear ul.SecondLevel {
+	padding-left: 10px;
+}
+.Diary .DiaryList .GroupByYear ul.ThirdLevel {
+	padding-left: 10px;
+}
+
+
+.Diary .DiaryList .GroupByMonth .FirstLevel .LevelOneName {
+}
+.Diary .DiaryList .GroupByMonth .SecondLevel .LevelTwoDate {
+}
+.Diary .DiaryList .GroupByMonth .SecondLevel .LevelTwoSeparator {
+}
+.Diary .DiaryList .GroupByMonth .SecondLevel .LevelTwoName {
+}
+}
+
+
+.Diary .DiaryList .GroupByYear .FirstLevel .LevelOneName {
+}
+.Diary .DiaryList .GroupByYear .ThirdLevel .LevelThreeDate {
+}
+.Diary .DiaryList .GroupByYear .ThirdLevel .LevelThreeSeparator {
+}
+.Diary .DiaryList .GroupByYear .ThirdLevel .LevelThreeName {
+}
+
+.Diary .DiaryList .NewItem {
+	background: url('images/new-item-16.png') no-repeat;
+	_background: url('images/new-item-16-ie6.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.Diary .ArticleList .FunctionTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+.Diary .ArticleList .EntriesColumn {
+	padding-right: 10px;
+	vertical-align: top;
+}
+.Diary .ArticleList .EntriesColumn .EntryContainer {
+	margin-bottom: 20px;
+}
+.Diary .ArticleList .EntriesColumn .EntryHeader h1 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+.Diary .ArticleList .EntriesColumn a.EntryHeaderLink {
+	text-decoration: none;
+}
+.Diary .ArticleList .EntriesColumn a.EntryHeaderLink:hover {
+	text-decoration: underline;
+}
+.Diary .ArticleList .EntriesColumn p.EntryDate {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.Diary .ArticleList .MenuColumn {
+	width: 220px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+.Diary .ArticleList .BackToIndex {
+	display: none;
+}
+
+.Diary .ArticleList .MenuColumn .FirstLevel span.LevelOneDate,
+.Diary .ArticleList .MenuColumn .FirstLevel span.LevelOneSeparator,
+.Diary .ArticleList .MenuColumn .SecondLevel span.LevelTwoDate,
+.Diary .ArticleList .MenuColumn .SecondLevel span.LevelTwoSeparator,
+.Diary .ArticleList .MenuColumn span.LevelThreeDate,
+.Diary .ArticleList .MenuColumn span.LevelThreeSeparator {
+	display: none;
+}

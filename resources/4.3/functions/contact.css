@@ -1,0 +1,84 @@
+
+.LayoutPage .Contact { min-height: initial; }
+
+.LayoutPage .Contact .ContactForm textarea.textmessage,
+.LayoutPage .Contact .ContactForm input.text {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	padding: 0.5em;
+}
+.LayoutPage .form-part textarea.textmessage { min-height: 150px; }
+
+.LayoutPage .layout-1 .form-part textarea.textmessage,
+.LayoutPage .layout-1 .form-part input.text { width: 50%; }
+
+.LayoutPage .layout-2 .form-part textarea.textmessage,
+.LayoutPage .layout-2 .form-part input.text,
+.LayoutPage .layout-5 .col-1 .form-part textarea.textmessage,
+.LayoutPage .layout-5 .col-1 .form-part input.text,
+.LayoutPage .layout-6 .col-0 .form-part textarea.textmessage,
+.LayoutPage .layout-6 .col-0 .form-part input.text { width: 75%; }
+
+.LayoutPage .form-part .ContactSentMessage,
+.Contact .ContactSentMessage {
+	background: #e4fae7 url('images/sent-check.gif') no-repeat 10px 10px;
+	border: 1px dashed #2f7f0a;
+	padding: 10px 10px 10px 70px;
+	min-height: 50px;
+	margin: 10px 3px;
+}
+.LayoutPage .form-part .ContactSentMessage p,
+.Contact .ContactSentMessage p {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 10pt;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+.LayoutPage .form-part .illegal,
+.Contact input.illegal,
+.Contact textarea.illegal,
+.ContactManager input.illegal,
+.ContactManager textarea.illegal {
+	background: #f4cece url('images/unfilled-field.gif') no-repeat center right !important;
+	border-color: #db4141 !important;
+	color: black !important;
+}
+.LayoutPage .form-part textarea.illegal,
+.Contact textarea.illegal {
+	background-position: 3px right !important;
+	color: black !important;
+}
+
+/* Fix för p-taggar i label*/
+
+.LayoutPage .form-part p,
+.Contact .ContactForm .ContactFormName p, 
+.Contact .ContactForm .ContactFormEmail p,
+.Contact .ContactForm .ContactFormHomePage p, 
+.Contact .ContactForm .ContactFormField p,
+.Contact .ContactForm .ContactFormMessage p {
+	margin: 0;
+	padding: 0;
+}
+
+.LayoutPage .form-part div {
+	padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+	.LayoutPage .Contact textarea,
+	.LayoutPage .Contact input[type=text] {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.LayoutPage .Contact .ContactForm { padding-bottom: 10px; }
+}

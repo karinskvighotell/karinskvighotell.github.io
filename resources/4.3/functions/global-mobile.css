@@ -1,0 +1,687 @@
+
+
+/* tablets and desktop
+@media only screen and (min-width: 768px) {
+}
+*/
+
+/* phones
+@media only screen and (max-width: 767px) {
+}
+*/
+
+/* portrait phones 
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    
+}
+*/
+
+@media only screen and (max-width: 768px)
+{
+    /*RESET*/
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+    address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, 
+    var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+    } 
+    
+    blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, 
+    q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+    
+    .ResponsiveDesign h1 { font-size: 200%; margin-bottom: 0.3em; }
+    .ResponsiveDesign h2 { font-size: 170%; margin-bottom: 0.3em; }
+    .ResponsiveDesign h3 { font-size: 150%; margin-bottom: 0.3em; }
+    .ResponsiveDesign h4 { font-size: 130%; margin-bottom: 0.3em; }
+    .ResponsiveDesign h5 { font-size: 120%; margin-bottom: 0.3em; }
+    .ResponsiveDesign h6 { font-size: 110%; margin-bottom: 0.3em; }
+    .ResponsiveDesign p { margin-bottom: 0.3em; }
+    
+    html { -webkit-text-size-adjust: none; }
+
+    body.ResponsiveDesign  {
+        -webkit-animation: bugfix infinite 1s !important;
+        padding-top: 40px;
+        font-size: 90%;
+        background-attachment: scroll;
+        background-repeat: repeat-y;
+    }
+    @-webkit-keyframes bugfix { 
+        from { padding: 0; padding-top: 40px; }
+        to { padding: 0; padding-top: 40px; }
+    }
+
+
+    /*Show menu when invisible checkbox is checked*/
+    .ResponsiveDesign .MobileMenuContainer input[type=checkbox]:checked ~ div div ul.DropMenu {
+        display: block;
+    }
+    /*Display 'show menu' link*/
+    .ResponsiveDesign .MobileMenuContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        z-index: 10000;
+        background-image: url('images/bg-dark-50.png');
+    }
+        
+    .ResponsiveDesign .MobileMenuContainer .show-menu {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        background: url('images/menu-button.gif') no-repeat 5px 5px;
+    	display: block;
+    	padding: 10px 40px;
+    	height: 20px;
+    	font-size: 11pt;
+        font-weight: normal;
+        text-align: center;
+    }
+
+
+   /*Make dropdown links appear inline*/
+    .ResponsiveDesign .MobileMenuContainer ul {
+        position: relative;
+        display: none;
+        float: none;
+        z-index: 100;
+    }
+    /*Make all menu links full width*/
+    .ResponsiveDesign ul.DropMenu ul,
+    .ResponsiveDesign ul.DropMenu ul ul,
+    .ResponsiveDesign ul.DropMenu li, 
+    .ResponsiveDesign ul.DropMenu li ul li, 
+    .ResponsiveDesign ul.DropMenu li ul li ul li, 
+    .ResponsiveDesign ul.DropMenu li a, 
+    .ResponsiveDesign ul.DropMenu li li a, 
+    .ResponsiveDesign ul.DropMenu li li li a 
+    {
+        position: static;
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-bottom-width: 1px;
+        /*background-color: inherit;*/
+        color: inherit;
+    }
+    
+    .ResponsiveDesign ul.DropMenu li a,
+    .ResponsiveDesign ul.DropMenu li li a,
+    .ResponsiveDesign ul.DropMenu li li li a 
+    {
+        padding: 10px 0;
+        font-size: 95%;
+        font-weight: normal;
+        width: auto;
+    }
+    
+    .ResponsiveDesign ul.DropMenu li:hover > ul,
+    .ResponsiveDesign ul.DropMenu ul li:hover li {
+        display: block;
+    }
+    .ResponsiveDesign ul.DropMenu li a {
+        padding-left: 5px;
+    }
+    .ResponsiveDesign ul.DropMenu li li a {
+        font-size: 85%;
+        padding-left: 15px;
+    }
+    .ResponsiveDesign ul.DropMenu li li li a {
+        font-size: 80%;
+        padding-left: 25px;
+    }
+    .ResponsiveDesign ul.DropMenu li:hover,
+    .ResponsiveDesign ul.DropMenu li.sfhover {
+        /*background-color: inherit;*/
+    }
+
+    .ResponsiveDesign ul.DropMenu li a.expandable,
+    .ResponsiveDesign ul.DropMenu li a.parent {
+        background-image: url('images/downarrow-white.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+
+    .ResponsiveDesign ul.DropMenu {
+        overflow: hidden;
+    }
+    
+    /*
+    Clear all styles
+    */
+
+    .ResponsiveDesign .HeaderField img,
+    .ResponsiveDesign .HeaderContainer img,
+    .ResponsiveDesign .HeadlineContainer img,
+    .ResponsiveDesign .NewsItemContent img,
+    .ResponsiveDesign .EntryBody img,
+    .ResponsiveDesign .ParagraphContainer img,
+    .ResponsiveDesign .CopyrightText img {
+        display: inline-block !important;
+        width: 100% \9 !important;
+        max-width: 100% !important;
+        height: auto !important;
+        float: none !important;
+    }
+    .ResponsiveDesign .ParagraphContainer iframe {
+        max-width: 100%;
+    }
+
+    /*
+    .PageHeader,
+    .HeaderContainer,
+    */
+    .ResponsiveDesign .LogoContainer {
+        display: none;
+    }
+
+    .ResponsiveDesign .LogoContainer, 
+    .ResponsiveDesign .HeaderContainer,
+    .ResponsiveDesign .PageContainer,
+    .ResponsiveDesign .MenuContainer,
+    .ResponsiveDesign .NavigatorContainer,
+    .ResponsiveDesign .NavigatorContainer .Padding,
+    .ResponsiveDesign .ContentContainer,
+    .ResponsiveDesign .ContentContainer .Content,
+    .ResponsiveDesign .ContentContainer .ContentContainerMiddle,
+    .ResponsiveDesign .PageFooter,
+    .ResponsiveDesign .PageFooterContainer .PageFooter,
+    .ResponsiveDesign .FooterContainer,
+    .ResponsiveDesign .dinStudioLink,
+    .ResponsiveDesign .CopyrightText
+    {
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+        min-height: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ResponsiveDesign .CopyrightText,
+    .ResponsiveDesign .ParagraphContainer,
+    .ResponsiveDesign .ImageContainer { padding: 0; margin: 0;}
+    .ResponsiveDesign .CopyrightText { padding: 5px; }
+    .ResponsiveDesign .dinStudioLink { text-align: center !important; padding: 5px 0 !important; }
+
+    /*
+    Functions
+    */
+
+    .ResponsiveDesign .MainPage,
+    .ResponsiveDesign .EmptyPage,
+    .ResponsiveDesign .TextLayout1,
+    .ResponsiveDesign .TextLayout2,
+    .ResponsiveDesign .ImageGallery1,
+    .ResponsiveDesign .ImageGallery2,
+    .ResponsiveDesign .ImageGallery3,
+    .ResponsiveDesign .ImageGallery,
+    .ResponsiveDesign .FileArea,
+    .ResponsiveDesign .Diary,
+    .ResponsiveDesign .Guestbook,
+	.ResponsiveDesign .LayoutPage,
+    .ResponsiveDesign .Contact { margin: 0; padding: 5px; padding-top: 10px; }
+
+    .ResponsiveDesign .MainPage .FunctionTable,
+    .ResponsiveDesign .EmptyPage .FunctionTable,
+    .ResponsiveDesign .TextLayout1 .FunctionTable,
+    .ResponsiveDesign .TextLayout2 .FunctionTable,
+    .ResponsiveDesign .ImageGallery1 .FunctionTable,
+    .ResponsiveDesign .ImageGallery2 .FunctionTable,
+    .ResponsiveDesign .ImageGallery3 .FunctionTable,
+    .ResponsiveDesign .FileArea .FunctionTable,
+    .ResponsiveDesign .Diary .FunctionTable,
+    .ResponsiveDesign .Guestbook .FunctionTable,
+	.ResponsiveDesign .LayoutPage,
+    .ResponsiveDesign .Contact .FunctionTable { width: auto; }
+
+	#sortable,
+	.edit-dialog {
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 5px 0;
+		border: 0;
+		border-radius: 0;
+	}
+
+
+    .ResponsiveDesign .MainPage .MainPageInlineContainer .ImageContainer,
+    .ResponsiveDesign .MainPage .MainPageInlineContainer .ParagraphContainer,
+    .ResponsiveDesign .TextLayout1 .FunctionTable .RightColumn,
+    .ResponsiveDesign .TextLayout1 .FunctionTable .RightColumn .ImageContainer,
+    .ResponsiveDesign .TextLayout1 .FunctionTable .RightColumn .ParagraphContainer,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .LeftColumn,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .LeftColumn .ImageContainer,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .LeftColumn .ParagraphContainer,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .RightColumn,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .RightColumn .ImageContainer,
+    .ResponsiveDesign .TextLayout2 .FunctionTable .RightColumn .ParagraphContainer,
+    .ResponsiveDesign .Contact .FunctionTable .RightColumn,
+    .ResponsiveDesign .Contact .FunctionTable .RightColumn .ImageContainer,
+    .ResponsiveDesign .Contact .FunctionTable .RightColumn .ParagraphContainer { 
+		max-width: 100%;
+		width: auto;
+		padding: 0 0 5px 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+    .ResponsiveDesign .MainPage .ImageContainer img,
+    .ResponsiveDesign .TextLayout1 .ImageContainer img,
+    .ResponsiveDesign .TextLayout2 .ImageContainer img,
+    .ResponsiveDesign .Contact .ImageContainer img { max-width: 100%; padding: 0; margin: 0; }
+
+    .ResponsiveDesign .FunctionTable { min-width: 0 !important; }
+
+    .ResponsiveDesign .MainPage { position: static; float: none; width: auto; margin: 0; }
+    .ResponsiveDesign .MainPage .MainContainer,
+    .ResponsiveDesign .MainPage .MainContainer .BodyTextContainer,
+    .ResponsiveDesign .MainPage .NewsContainer { position: static; float: none; clear: both; margin: 0; padding: 0; width: auto; border: 0;}
+    .ResponsiveDesign .MainPage .NewsContainer .NewsHeader { padding-top: 5px; width: auto; }
+    .ResponsiveDesign .MainPage .NewsContainer .NewsItem { padding: 5px 0; width: auto; }
+    .ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer { float: none; }
+    .ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ImageContainer { width: auto; }
+    .ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ParagraphContainer { font-size: 90%; width: auto; }
+
+    .ResponsiveDesign .TextLayout1 .LeftColumn { float: none; padding: 0; margin: 0; border: 0; width: auto; }
+    .ResponsiveDesign .TextLayout1 .RightColumn { float: none; width: auto; padding: 0; margin: 0; }
+    .ResponsiveDesign .TextLayout1 .RightColumn .ImageContainer { padding: 0; margin: 0; }
+    .ResponsiveDesign .TextLayout1 .RightColumn .ImageContainer img { padding: 0; margin: 0; }
+    /*.ResponsiveDesign .TextLayout1 .RightColumn .ParagraphContainer * { font-size: 90%; }*/
+
+    .ResponsiveDesign .TextLayout2 .RightColumn { margin: 0; padding: 0; width: auto; float: none; border: 0;}
+    .ResponsiveDesign .TextLayout2 .LeftColumn { margin: 0; padding: 0; width: auto; float: none; border: 0; }
+    .ResponsiveDesign .TextLayout2 .InlineImageContainer { margin: 0; padding: 0; }
+
+    .ResponsiveDesign .FileArea .FileListContainer { width: auto; margin: 0; padding: 0; }
+    .ResponsiveDesign .FileArea .FunctionTable { margin: 0; padding: 0; width: auto; }
+    .ResponsiveDesign .FileArea .FunctionTable .FileListContainer { margin: 0; padding: 10px 0; width: auto; }
+    .ResponsiveDesign .FileArea .FileList { margin: 0; width: 100%; }
+    .ResponsiveDesign .FileArea .FileList td { vertical-align: top; margin: 0; padding: 2px 0; width: auto; }
+    .ResponsiveDesign .FileArea .FileList td.IconCell { width: 20px; }
+    .ResponsiveDesign .FileArea .FileList td.TextCell { overflow: hidden; }
+    .ResponsiveDesign .FileArea .FileList td.SizeCell { font-size: 80%; white-space: nowrap; }
+
+    .ResponsiveDesign .Guestbook .GuestbookFormContainer { width: auto; }
+    .ResponsiveDesign .Guestbook .GuestbookForm { float: none; width: auto; padding: 0; }
+    .ResponsiveDesign .Guestbook .GuestbookForm input.textname { display: block; width: 100%; box-sizing: border-box; padding: 5px; font-size: 16px; }
+    .ResponsiveDesign .Guestbook .GuestbookForm textarea { display: block; width: 100%; box-sizing: border-box; padding: 5px; font-size: 16px; }
+    .ResponsiveDesign .Guestbook .GuestbookList { width: auto; margin: 0; margin-top: 20px; padding: 0; border: 0; }
+    .ResponsiveDesign .Guestbook .GuestbookListItem p { line-height: 1.1em; font-size: 90%; }
+
+    .ResponsiveDesign .Contact .LeftColumn { float: none; padding: 0; margin: 0; border: 0; width: auto; }
+    .ResponsiveDesign .Contact .RightColumn { float: none; padding: 0; margin: 0; margin-top: 10px; width: auto; }
+    .ResponsiveDesign .Contact .RightColumn .ImageContainer { float: none; text-align: center; }
+    .ResponsiveDesign .Contact .RightColumn .ImageContainer img { padding: 0; margin: 0; }
+    /*.ResponsiveDesign .Contact .RightColumn .ParagraphContainer * { font-size: 90%; }*/
+    .ResponsiveDesign .Contact .ContactForm { width: auto; padding: 0; margin: 0; }
+    .ResponsiveDesign .Contact input.text { display: block; width: 100%; box-sizing: border-box; padding: 5px; font-size: 16px; }
+    .ResponsiveDesign .Contact .ContactSubmit { width: 200px; height: 25px; padding: 5px; }
+    .ResponsiveDesign .Contact textarea.textmessage { display: block; width: 100%; box-sizing: border-box; padding: 5px; font-size: 16px; }
+
+    .ResponsiveDesign .Diary .ArticleList .EntriesColumn { margin: 0; padding: 0; width: auto; float: none; }
+    .ResponsiveDesign .Diary .ArticleList .EntriesColumn .EntryContainer { padding: 0; margin: 0; }
+    .ResponsiveDesign .Diary .ArticleList .MenuColumn { margin: 0; padding: 0; width: auto; float: none; }
+    .ResponsiveDesign .Diary .DiaryContainer .RightColumn { margin: 0; padding: 0; width: auto; float: none; }
+    .ResponsiveDesign .Diary .DiaryContainer .RightColumn .DiaryView { margin: 0; padding: 0; width: auto; }
+    .ResponsiveDesign .Diary .DiaryContainer .RightColumn .DiaryDate { margin: 0; padding: 0; width: auto; }
+    .ResponsiveDesign .Diary .DiaryContainer .LeftColumn { margin: 0; padding: 0; width: auto; float: none; border: 0; }
+    .ResponsiveDesign .Diary .EntryContainer { padding: 5px 0; }
+    .ResponsiveDesign .Diary .ShareButtons { margin: 5px 0; height: auto; }
+
+    .ResponsiveDesign .Diary .DiaryList input[type=checkbox]:checked ~ ul.FirstLevel { display: block; }
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel { display: none; }
+    .ResponsiveDesign .Diary .DiaryList .BackToIndex { padding: 10px 0; }
+    .ResponsiveDesign .Diary .DiaryList .show-blog-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-decoration: none;
+        color: #fff;
+        background: url('images/menu-blog-button.png') no-repeat 5px 5px;
+    	display: block;
+    	height: 40px;
+    	width: 50px;
+    	font-size: 11pt;
+        font-weight: normal;
+        z-index: 10001;
+    }
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding-top: 5px;
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        z-index: 10001;
+    }
+    .ResponsiveDesign .Diary .DiaryList .GroupByDay li.FirstLevelItem,
+    .ResponsiveDesign .Diary .DiaryList .GroupByMonth ul.SecondLevel, 
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear ul.SecondLevel,
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear ul.ThirdLevel { width: 100%; border: 0; padding: 0; box-sizing: border-box; }
+    .ResponsiveDesign .Diary .DiaryList .GroupByMonth ul.SecondLevel, 
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear ul.SecondLevel { width: 100%; border: 0; }
+    .ResponsiveDesign .Diary .DiaryList .GroupByMonth .LevelOneDate,
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear .LevelOneDate,
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear .LevelTwoDate {
+        background: url('images/downarrow-white.png') no-repeat top right;
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 12pt;
+        width: 100%;
+    }
+    .ResponsiveDesign .Diary .DiaryList ul li a { display: block; }
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel li.FirstLevelItem a { padding: 5px 0; }
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel li.SecondLevelItem a,
+    .ResponsiveDesign .Diary .DiaryList ul.FirstLevel li.ThirdLevelItem a { padding: 0; }
+
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear .LevelOneDate { font-size: 13pt; }
+    .ResponsiveDesign .Diary .DiaryList .GroupByDay li.FirstLevelItem,
+    .ResponsiveDesign .Diary .DiaryList .GroupByMonth li.SecondLevelItem, 
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear li.ThirdLevelItem { border: 0; margin: 0; padding: 5px; }
+    .ResponsiveDesign .Diary .DiaryList .GroupByMonth li.SecondLevelItem, 
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear li.SecondLevelItem,
+    .ResponsiveDesign .Diary .DiaryList .GroupByYear li.ThirdLevelItem { padding-left: 10px; }
+
+    .ResponsiveDesign .Diary .DiaryCommentFunction { width: auto; }
+    .ResponsiveDesign .Diary .DiaryCommentListContainer { padding: 5px 0; }
+    .ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormCell { float: none; width: auto; padding: 5px 0; }
+    .ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormCell input { font-size: 16px; }
+    .ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormRow textarea { font-size: 16px; }
+    .ResponsiveDesign .Diary .DiaryCommentFormTable .CommentFormRow { clear: both; padding: 5px 0; }
+    .ResponsiveDesign .Diary .DiaryCommentFormControl { padding: 5px 0; }
+    .ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaImageTD, 
+    .ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaSubmitTD { float: none; width: auto; }
+    .ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaImageTD { text-align: left; }
+	.ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaImage { display: block; }
+    .ResponsiveDesign .Diary .DiaryCommentFormControl .CaptchaSubmitTD input { }
+    .ResponsiveDesign .Diary .DiaryCommentFormControl .DiaryCommentSubmitTD {  }
+
+
+    .ResponsiveDesign .ImageGallery1 .FunctionTable,
+    .ResponsiveDesign .ImageGallery2 .FunctionTable,
+    .ResponsiveDesign .ImageGallery3 .FunctionTable { width: auto; padding: 0; }
+
+    .ResponsiveDesign .ImageGallery1 .FunctionTable .ImageRow,
+    .ResponsiveDesign .ImageGallery2 .FunctionTable .ImageRow,
+    .ResponsiveDesign .ImageGallery3 .FunctionTable .ImageRow { padding: 0; }
+
+    .ResponsiveDesign .ImageGallery1 .FunctionTable .ImageCell { width: 160px; box-sizing: border-box; }
+    .ResponsiveDesign .ImageGallery1 .FunctionTable .ImageCell .ParagraphContainer { width: auto; box-sizing: border-box; }
+
+    .ResponsiveDesign .ImageGallery2 .FunctionTable .ImageCell{ width: auto; }
+    .ResponsiveDesign .ImageGallery2 .FunctionTable .TextCell { margin-left: 130px; }
+
+    .ResponsiveDesign .ImageGallery3 .FunctionTable .ImageCell{ width: auto; }
+    .ResponsiveDesign .ImageGallery3 .FunctionTable .TextCell { margin-left: 70px; }
+
+    .ResponsiveDesign .ImageGallery .Gallery1,
+    .ResponsiveDesign .ImageGallery .Gallery2,
+    .ResponsiveDesign .ImageGallery .Gallery3,
+    .ResponsiveDesign .ImageGallery .Gallery4,
+    .ResponsiveDesign .ImageGallery .Gallery5,
+    .ResponsiveDesign .ImageGallery .Gallery6,
+    .ResponsiveDesign .ImageGallery .Gallery7,
+    .ResponsiveDesign .ImageGallery .Slide1,
+    .ResponsiveDesign .ImageGallery .Slide2,
+    .ResponsiveDesign .ImageGallery .Slide3 {
+        width: auto;
+    }
+    .ResponsiveDesign .ImageGallery .Gallery1 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery2 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery3 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery4 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery6 .GalleryTable,
+    .ResponsiveDesign .ImageGallery .Gallery7 .GalleryTable {
+        width: auto;
+    }
+    .ResponsiveDesign .ImageGallery .Gallery1 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery2 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery3 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery4 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery5 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery6 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Gallery7 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide1 li .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide2 li .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide3 li .ImageContainer img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    @media screen and (orientation:portrait) {
+        .ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { width:50%; }
+    }
+
+    @media screen and (orientation:landscape) {
+        .ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { width:25%; }
+    }
+
+    .ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell { box-sizing: border-box; margin: 0; padding: 2px; padding-bottom: 5px; }
+    .ResponsiveDesign .ImageGallery .Gallery1 .GalleryCell .ParagraphContainer { padding: 3px; }
+
+    .ResponsiveDesign .ImageGallery .Gallery4 .GalleryImagesRow,
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryImagesRow { padding: 0; height: auto; }
+
+    .ResponsiveDesign .ImageGallery .Gallery4 .GalleryImagesRow .GalleryTextCell,
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryImagesRow .GalleryTextCell { float: none; width: auto; margin-left: 130px; padding: 0; }
+
+    .ResponsiveDesign .ImageGallery .Gallery4 .GalleryImagesRow .image-cell,
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryImagesRow .image-cell { clear: both; padding-bottom: 15px; }
+    .ResponsiveDesign .ImageGallery .Gallery5 .GalleryImagesRow .GalleryTextCell { margin-left: 60px; }
+    
+    .ResponsiveDesign .ImageGallery .Gallery6 .GalleryRowPadding,
+    .ResponsiveDesign .ImageGallery .Gallery7 .GalleryRowPadding { clear: none; }
+    .ResponsiveDesign .ImageGallery .Gallery6 .ParagraphContainer,
+    .ResponsiveDesign .ImageGallery .Gallery7 .ParagraphContainer { padding: 0 !important; }
+
+
+    .ResponsiveDesign .ImageGallery .Slide1 .lSPager,
+    .ResponsiveDesign .ImageGallery .Slide2 .lSPager,
+    .ResponsiveDesign .ImageGallery .Slide3 .lSPager { padding: 5px 0; }
+
+    .ResponsiveDesign .ImageGallery .Slide3 .lSPager,
+    .ResponsiveDesign .ImageGallery .Slide3 .ParagraphContainer { display: none; }
+    .ResponsiveDesign .ImageGallery .Slide3 .ImageContainer { padding: 0 !important; }
+
+    .ResponsiveDesign .ImageGallery .Slide1 .GalleryCommentFormControl,
+    .ResponsiveDesign .ImageGallery .Slide2 .GalleryCommentFormControl,
+    .ResponsiveDesign .ImageGallery .Slide1 .GalleryCommentFormControl textarea,
+    .ResponsiveDesign .ImageGallery .Slide2 .GalleryCommentFormControl textarea { width: 100%; box-sizing: border-box; }
+
+    .ResponsiveDesign .ImageGallery .Slide1 .GalleryCommentFormControl .GalleryCommentSmiliesTD,
+    .ResponsiveDesign .ImageGallery .Slide1 .GalleryCommentFormControl .GalleryCommentSubmitTD,
+    .ResponsiveDesign .ImageGallery .Slide2 .GalleryCommentFormControl .GalleryCommentSmiliesTD,
+    .ResponsiveDesign .ImageGallery .Slide2 .GalleryCommentFormControl .GalleryCommentSubmitTD { width: 50%; }
+
+    .ResponsiveDesign .ImageGallery .Slide1 .ImageContainer img,
+    .ResponsiveDesign .ImageGallery .Slide2 .ImageContainer img { width: 100%; }
+
+    .ResponsiveDesign .ImageGallery .Slide1 .CommentContainer img,
+    .ResponsiveDesign .ImageGallery .Slide2 .CommentContainer img { display: inline !important; }
+
+
+    .ResponsiveDesign #lg-outer {
+        background-color: #000 !important;
+    }
+    .ResponsiveDesign #lg-gallery .lg-caption {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 30px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-position: 10px bottom;
+        height: 50px;
+    }
+    .ResponsiveDesign #lg-gallery .lg-caption.expanded {
+        overflow: initial;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .ResponsiveDesign #lg-gallery #lg-close {
+        top: 1px;
+        right: 1px;
+    }
+    .ResponsiveDesign #lg-comment {
+        top: 1px;
+        left: 1px;
+    }
+    .ResponsiveDesign #lg-comment.active span.comment-text {
+        position: absolute;
+        left: 40px;
+        top: 6px;
+        margin: 0;
+    }
+    .ResponsiveDesign .lg-comment-list {
+        padding-top: 130px;
+    }
+    .ResponsiveDesign .ResponsiveDesign .lg-comment-list .CommentListContainer {
+        width: auto;
+        max-width: initial;
+        height: 100%;
+        overflow: initial;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .ResponsiveDesign #lg-action { bottom: 5px; }
+    .ResponsiveDesign #lg-counter { bottom: 37px; }
+
+    .ResponsiveDesign .Slide1 .lSAction>a,
+    .ResponsiveDesign .Slide2 .lSAction>a { top: 160px }
+
+    .ResponsiveDesign .Slide1 .lSAction>a.lSPrev { left: 5px; }
+    .ResponsiveDesign .Slide1 .lSAction>a.lSNext { right: 5px; }
+    
+    .ResponsiveDesign .Slide2 .lSAction>a.lSPrev { left: 5px; }
+    .ResponsiveDesign .Slide2 .lSAction>a.lSNext { right: 5px; }
+
+    .ResponsiveDesign .ls-auto-controls {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+
+    .ResponsiveDesign .floating-comment-form {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        z-index: 5000;
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        box-sizing: border-box; 
+        padding: 0 5px;
+    }
+    .ResponsiveDesign .floating-comment-form .GalleryCommentFormControl { max-width: 100%; width: auto; }
+    .ResponsiveDesign .floating-comment-form .GalleryCommentFormControl textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .ResponsiveDesign .floating-comment-form .GalleryCommentFormControl .GalleryCommentSubmitTD { vertical-align: top; }
+    
+    .ResponsiveDesign .Slide1 .GalleryCommentFormControl textarea,
+    .ResponsiveDesign .Slide2 .GalleryCommentFormControl textarea {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+
+	.LayoutPage .layout-10 .col-block, 
+	.LayoutPage .layout-11 .col-block { float: left; }
+
+	.LayoutPage .layout-10 .col-0 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-10 .col-1 { width: 50%; padding-left: 1%; padding-right: 0; }
+	.LayoutPage .layout-10 .col-2 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; clear: left; }
+	.LayoutPage .layout-10 .col-3 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-10 .col-4 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+
+	.LayoutPage .layout-11 .col-0 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; }
+	.LayoutPage .layout-11 .col-1 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-11 .col-2 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+	.LayoutPage .layout-11 .col-3 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; clear: left ;}
+	.LayoutPage .layout-11 .col-4 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-11 .col-5 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+
+	.LayoutPage .layout-14 .col-1 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-14 .col-2 { width: 50%; padding-left: 1%; padding-right: 0; }
+	.LayoutPage .layout-14 .col-3 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-14 .col-4 { width: 50%; padding-left: 1%; padding-right: 0; }
+
+}
+
+
+@media only screen and (max-width: 480px)
+{
+
+	.LayoutPage .layout-1 .col-block,
+	.LayoutPage .layout-2 .col-block,
+	.LayoutPage .layout-3 .col-block,
+	.LayoutPage .layout-5 .col-block,
+	.LayoutPage .layout-6 .col-block,
+	.LayoutPage .layout-7 .col-block,
+	.LayoutPage .layout-8 .col-block,
+	.LayoutPage .layout-9 .col-block,
+	.LayoutPage .layout-10 .col-0,
+	.LayoutPage .layout-12 .col-block,
+	.LayoutPage .layout-13 .col-block,
+	.LayoutPage .layout-14 .col-block { 
+		float: none !important;
+		display: block !important;
+		width: auto !important;
+		padding: 0 !important;
+	}
+
+	.LayoutPage .layout-4 .col-block,
+	.LayoutPage .layout-10 .col-block, 
+	.LayoutPage .layout-11 .col-block { float: left; }
+
+	.LayoutPage .layout-4 .col-0 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-4 .col-1 { width: 50%; padding-left:  1%; padding-right: 0; }
+	.LayoutPage .layout-4 .col-2 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-4 .col-3 { width: 50%; padding-left:  1%; padding-right: 0; }
+
+	.LayoutPage .layout-10 .col-1 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-10 .col-2 { width: 50%; padding-left:  1%; padding-right: 0;  clear: none; }
+	.LayoutPage .layout-10 .col-3 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-10 .col-4 { width: 50%; padding-left:  1%; padding-right: 0; }
+
+	.LayoutPage .layout-11 .col-0 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-1 { width: 50%; padding-left:  1%; padding-right: 0; }
+	.LayoutPage .layout-11 .col-2 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-3 { width: 50%; padding-left:  1%; padding-right: 0;  clear: none;}
+	.LayoutPage .layout-11 .col-4 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-5 { width: 50%; padding-left:  1%; padding-right: 0; }
+
+}
